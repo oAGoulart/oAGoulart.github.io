@@ -1,4 +1,4 @@
-/* Minimal CSS Reset */
+/* CSS Reset */
 
 html {
   box-sizing: border-box;
@@ -20,6 +20,6 @@ ol, ul {
 }
 
 img {
-  max-width: 100%;
+  max-width: 15px;
   height: auto;
 }

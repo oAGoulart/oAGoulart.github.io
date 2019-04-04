@@ -1,38 +1,60 @@
-/* Typography */
+/* Resizing */
 
 html {
 	font-family: 'Roboto', sans-serif;
+	font-size: 12px;
 }
 
-@media (min-width: 576px) {
+.icons img {
+		max-width: 15px;
+		max-height: auto;
+}
+
+@media (min-width: 560px) {
 	html {
 		font-size: 14px;
 	}
+
+	.icons img {
+		max-width: 20px;
+		max-height: auto;
+	}
 }
 
-@media (min-width: 768px) {
+@media (min-width: 720px) {
 	html {
 		font-size: 16px;
 	}
+
+	.icons img {
+		max-width: 25px;
+		max-height: auto;
+	}
 }
 
-@media (min-width: 992px) {
+@media (min-width: 960px) {
 	html {
 		font-size: 18px;
 	}
-}
 
-@media (min-width: 1200px) {
-	html {
-		font-size: 20px;
+	.icons img {
+		max-width: 30px;
+		max-height: auto;
 	}
 }
 
-.icons-social i {
-	font-size: 3em;
+@media (min-width: 1280px) {
+	html {
+		font-size: 20px;
+	}
+
+	.icons img {
+		max-width: 35px;
+		max-height: auto;
+	}
 }
 
-/* Custom Styles */
+/* Styling */
 
 main {
 	display: flex;
@@ -41,31 +63,22 @@ main {
 	justify-content: center;
 	padding: 0 30px;
 	text-align: center;
+	background: #00D4AA;
+	color: #0098D7;
 }
 
-main > .intro {
+main > .title {
 	font-family: 'Reem Kufi', sans-serif;
 	font-size: 3.75em;
 	font-weight: 600;
 }
 
-main > .tagline {
+main > .about {
 	font-size: 1.5rem;
 	margin: 1.5rem 0;
 	font-weight: 100;
 }
 
-.icons-social i {
-	padding: 10px;
-}
-
-.devto {
-	margin-bottom: -0.20rem;
-}
-
-.devto svg {
-	margin-bottom: -0.20rem;
-	margin-left: 0.675rem;;
-	width: 2.65rem;
-	height: 2.65rem;
+.color-filter {
+	filter: invert(41%) sepia(98%) saturate(697%) hue-rotate(160deg) brightness(92%) contrast(108%);
 }
