@@ -1,78 +1,286 @@
+/* General */
+
 html {
 	font-family: 'Roboto', sans-serif;
-	font-size: 12px;
+	font-size: 20px;
 }
 
-p img {
-	max-width: 15px;
-	max-height: auto;
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Maven Pro', sans-serif;
+}
+
+p {
+	color: #808080;
+}
+
+a {
+	color: #006DD6;
+}
+
+a:hover {
+  color: #00417D;
+}
+
+.box {
+  background-color: #F6F8FA;
+  border: 1px solid #E1E4E8;
+  overflow: auto;
+  padding: 3px 3px;
+}
+
+blockquote {
+  background-color: #F6F8FA;
+  border-left: 5px solid #C3C7CC;
+  overflow: auto;
+  padding-left: 25px;
+  margin: 16px 40px;
+}
+
+/* GitHub style by Chris Patuzzo | adapted by me */
+
+code, tt {
+  margin: 0 2px;
+  padding: 0 5px;
+  white-space: nowrap;
+  background-color: #F6F6FA;
+  border-radius: 3px;
+}
+
+pre code {
+  margin: 0;
+  padding: 0;
+  white-space: pre;
+  border: none;
+  background: transparent;
+}
+
+.highlight pre {
+  background-color: #F6F8FA;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre {
+  background-color: #F6F8FA;
+  font-size: 13px;
+  line-height: 19px;
+  overflow: auto;
+  padding: 6px 10px;
+  border-radius: 3px;
+}
+
+pre code, pre tt {
+  background-color: transparent;
+  border: none;
+}
+
+/* Navbar by Jones Joseph | adapted by me */
+
+.navbar {
+  height: 50px;
+  width: 100%;
+  background-color: #00D4AA;
+  position: relative;
+}
+
+.navbar > .navbar-header {
+  display: inline;
+}
+
+.navbar > .navbar-header > .navbar-logo {
+  display: inline-block;
+  padding: 10px 10px 10px 10px;
+}
+
+.navbar > .navbar-header > .navbar-logo a img {
+	height: 30px;
+  width: auto;
 	filter: invert(41%) sepia(98%) saturate(697%) hue-rotate(160deg) brightness(92%) contrast(108%);
 }
 
-@media (min-width: 560px) {
-	html {
-		font-size: 14px;
-	}
-
-	p img {
-		max-width: 20px;
-		max-height: auto;
-	}
+.navbar > .navbar-header > .navbar-logo a img:hover {
+	filter: invert(32%) sepia(71%) saturate(1792%) hue-rotate(166deg) brightness(95%) contrast(103%);
 }
 
-@media (min-width: 720px) {
-	html {
-		font-size: 16px;
-	}
-
-	p img {
-		max-width: 25px;
-		max-height: auto;
-	}
+.navbar > .navbar-button {
+  display: none;
 }
 
-@media (min-width: 960px) {
-	html {
-		font-size: 18px;
-	}
-
-	p img {
-		max-width: 30px;
-		max-height: auto;
-	}
+.navbar > .navbar-pages {
+  display: inline;
+  float: right;
+  font-size: 18px;
 }
 
-@media (min-width: 1280px) {
-	html {
-		font-size: 20px;
-	}
-
-	p img {
-		max-width: 35px;
-		max-height: auto;
-	}
+.navbar > .navbar-pages > a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #0098D7;
 }
+
+.navbar > .navbar-pages > a:hover {
+  color: #0088AA;
+}
+
+.navbar > #navbar-check {
+  display: none;
+}
+
+@media (max-width:560px) {
+  .navbar > .navbar-button {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .navbar > .navbar-button > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .navbar > .navbar-button > label:hover,.navbar  #navbar-check:checked ~ .navbar-button > label {
+    color: #0098D7;
+  }
+  .navbar > .navbar-button > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #0098D7;
+  }
+  .navbar > .navbar-pages {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #00D4AA;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navbar > .navbar-pages > a {
+    display: block;
+    width: 100%;
+  }
+  .navbar > #navbar-check:not(:checked) ~ .navbar-pages {
+    height: 0px;
+  }
+  .navbar > #navbar-check:checked ~ .navbar-pages {
+    height: calc(50px * 3);
+    overflow-y: auto;
+    border-bottom: 1px solid #0098D7;
+    z-index: 1;
+  }
+}
+
+/* Main */
 
 main {
 	display: flex;
 	flex-direction: column;
 	min-height: 100vh;
+}
+
+/* Home Page */
+
+main > .intro {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
 	justify-content: center;
 	padding: 0 30px;
+	overflow: auto;
 	text-align: center;
 	background: #00D4AA;
+}
+
+main > .intro h1 {
+	font-size: 75px;
+	font-weight: 600;
 	color: #0098D7;
 }
 
-main > .about h1 {
-	font-family: 'Maven Pro', sans-serif;
-	font-size: 3.75em;
-	font-weight: 600;
+main > .intro p {
+	margin: 30px 0;
+	font-family: 'Roboto Mono', monospace;
+	font-size: 30px;
+	font-weight: 100;
+	color: #0098D7;
 }
 
-main > .about p {
-	font-family: 'Roboto Mono', monospace;
-	font-size: 1.5rem;
-	margin: 1.5rem 0;
+main > .intro a img {
+	height: 48px;
+	width: auto;
+	padding: 0px;
+	filter: invert(41%) sepia(98%) saturate(697%) hue-rotate(160deg) brightness(92%) contrast(108%);
+}
+
+main > .intro a img:hover {
+	filter: invert(32%) sepia(71%) saturate(1792%) hue-rotate(166deg) brightness(95%) contrast(103%);
+}
+
+/* Posts */
+
+main > .post {
+	margin: 0 auto;
+	padding: 0 20px 50px 20px;
+	width: calc(100vw - 20px);
+	overflow: auto;
+}
+
+@media (min-width:820px) {
+	main > .post {
+		width: 800px;
+	}
+}
+
+main > .post h1 {
+	margin: 10px 0;
+	font-size: 40px;
+	font-weight: 300;
+}
+
+main > .post p {
+	margin: 10px 0;
+	font-size: 18px;
 	font-weight: 100;
+}
+
+main > .post > .post-info {
+	margin: 40px 0;
+	border-bottom: 1px solid #C6C6C6;
+}
+
+main > .post > .post-info h1 {
+	font-size: 50px;
+}
+
+main > .post > .post-info p {
+	font-size: 12px;
+}
+
+/* Footer */
+
+.footer {
+  width: 100%;
+  padding: 30px;
+  font-size: 16px;
+  background-color: #E6E6E6;
+  color: #808080;
+  text-align: center;
+  overflow: auto;
+  border-top: 1px solid #C3C7CC;
+}
+
+.footer li {
+	padding: 2px;
 }
