@@ -1,6 +1,7 @@
 ---
-layout: default
+layout: post
 title:  "Welcome to Jekyll!"
+author: "Augusto Goulart"
 date:   2019-04-03 17:07:23 -0300
 categories: jekyll update
 ---

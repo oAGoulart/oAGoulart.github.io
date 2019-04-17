@@ -21,8 +21,34 @@
     <link rel="stylesheet" href="{{ site.url }}/assets/css/style.css">
   </head>
   <body>
+    <div class="navbar">
+      <input type="checkbox" id="navbar-check">
+      <div class="navbar-header">
+        <div class="navbar-logo">
+          <a href="{{ site.url }}">
+            <img src="{{ site.url }}/assets/images/logo.svg" alt="Augusto Goulart">
+          </a>
+        </div>
+      </div>
+      <div class="navbar-button">
+        <label for="navbar-check">
+          <span></span>
+          <span></span>
+          <span></span>
+        </label>
+      </div>
+      <div class="navbar-pages">
+        <a href="{{ site.url }}/about">About</a>
+        <a href="{{ site.url }}/posts">Posts</a>
+      </div>
+    </div>
     <main>
       {{ content }}
     </main>
+    <ul class="footer">
+      <li><a href="{{ site.url }}/privacy">Privacy</a> | <a href="{{ site.url }}/disclaimer">Disclaimer</a></li>
+      <li><strong>Made with <span style="color: #E25555;">❤</span> & ☕ !</strong></li>
+      <li>All rights reserved &copy; 2019 Augusto Goulart</li>
+    </ul>
   </body>
 </html>

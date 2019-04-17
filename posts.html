@@ -1,0 +1,30 @@
+---
+layout: default
+title: Posts
+---
+
+<div class="post">
+	<div class="post-info">
+		<h1>{{ page.title }}</h1>
+	</div>
+	<ul>
+  	{% for post in site.posts %}
+    	<li>
+      	<h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+      	<p style="font-size: 0.65rem;">
+					{% for flag in post.categories %}
+  					<span class="box">{{ flag }}</span>
+					{% endfor %}
+				</p>
+				<p style="font-size: 0.65rem;">
+					<span>{{ post.author }}</span>
+					{% if post.date %}
+						<span> | </span>
+						<span>{{ post.date | date: '%B %d, %Y' }}</span>
+					{% endif %}
+				</p>
+      	<p>{{ post.excerpt }}</p>
+    	</li>
+  	{% endfor %}
+	</ul>
+</div>
