@@ -18,35 +18,41 @@ p {
 }
 
 a {
-	color: #006DD6;
+	color: #006dd6;
 }
 
 a:hover {
-  color: #00417D;
+  color: #00417d;
 }
 
 .box {
-  background-color: #F6F8FA;
-  border: 1px solid #E1E4E8;
+  background-color: #f6f8fA;
+  border: 1px solid #e1e4e8;
   overflow: auto;
   padding: 3px 3px;
 }
 
 blockquote {
-  background-color: #F6F8FA;
-  border-left: 5px solid #C3C7CC;
+  background-color: #f6f8fA;
+  border-left: 5px solid #c3c7cc;
   overflow: auto;
   padding-left: 25px;
+  padding-right: 10px;
   margin: 16px 40px;
 }
 
 /* GitHub style by Chris Patuzzo | adapted by me */
 
+code, kbd, pre {
+  font-family: 'Roboto Mono', monospace;
+  font-size: 1em;
+}
+
 code, tt {
   margin: 0 2px;
   padding: 0 5px;
   white-space: nowrap;
-  background-color: #F6F6FA;
+  background-color: #f6f8fA;
   border-radius: 3px;
 }
 
@@ -59,7 +65,7 @@ pre code {
 }
 
 .highlight pre {
-  background-color: #F6F8FA;
+  background-color: #f6f8fA;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
@@ -68,7 +74,7 @@ pre code {
 }
 
 pre {
-  background-color: #F6F8FA;
+  background-color: #f6f8fA;
   font-size: 13px;
   line-height: 19px;
   overflow: auto;
@@ -86,7 +92,7 @@ pre code, pre tt {
 .navbar {
   height: 50px;
   width: 100%;
-  background-color: #00D4AA;
+  background-color: #00D4aa;
   position: relative;
 }
 
@@ -123,11 +129,11 @@ pre code, pre tt {
   display: inline-block;
   padding: 13px 10px 13px 10px;
   text-decoration: none;
-  color: #0098D7;
+  color: #0098d7;
 }
 
 .navbar > .navbar-pages > a:hover {
-  color: #0088AA;
+  color: #0088aa;
 }
 
 .navbar > #navbar-check {
@@ -148,19 +154,19 @@ pre code, pre tt {
     padding: 13px;
   }
   .navbar > .navbar-button > label:hover,.navbar  #navbar-check:checked ~ .navbar-button > label {
-    color: #0098D7;
+    color: #0098d7;
   }
   .navbar > .navbar-button > label > span {
     display: block;
     width: 25px;
     height: 10px;
-    border-top: 2px solid #0098D7;
+    border-top: 2px solid #0098d7;
   }
   .navbar > .navbar-pages {
     position: absolute;
     display: block;
     width: 100%;
-    background-color: #00D4AA;
+    background-color: #00D4aa;
     height: 0px;
     transition: all 0.3s ease-in;
     overflow-y: hidden;
@@ -175,9 +181,9 @@ pre code, pre tt {
     height: 0px;
   }
   .navbar > #navbar-check:checked ~ .navbar-pages {
-    height: calc(50px * 3);
+    height: calc(50px * 2);
     overflow-y: auto;
-    border-bottom: 1px solid #0098D7;
+    border-bottom: 1px solid #0098d7;
     z-index: 1;
   }
 }
@@ -200,13 +206,13 @@ main > .intro {
 	padding: 0 30px;
 	overflow: auto;
 	text-align: center;
-	background: #00D4AA;
+	background: #00D4aa;
 }
 
 main > .intro h1 {
 	font-size: 75px;
 	font-weight: 600;
-	color: #0098D7;
+	color: #0098d7;
 }
 
 main > .intro p {
@@ -214,7 +220,7 @@ main > .intro p {
 	font-family: 'Roboto Mono', monospace;
 	font-size: 30px;
 	font-weight: 100;
-	color: #0098D7;
+	color: #0098d7;
 }
 
 main > .intro a img {
@@ -254,11 +260,12 @@ main > .post p {
 	margin: 10px 0;
 	font-size: 18px;
 	font-weight: 100;
+	text-align: justify;
 }
 
 main > .post > .post-info {
 	margin: 40px 0;
-	border-bottom: 1px solid #C6C6C6;
+	border-bottom: 1px solid #c6c6c6;
 }
 
 main > .post > .post-info h1 {
@@ -269,17 +276,22 @@ main > .post > .post-info p {
 	font-size: 12px;
 }
 
+main > .post > p.information {
+	margin: 15px 0;
+	font-size: 12px;
+}
+
 /* Footer */
 
 .footer {
   width: 100%;
   padding: 30px;
   font-size: 16px;
-  background-color: #E6E6E6;
+  background-color: #e6e6e6;
   color: #808080;
   text-align: center;
   overflow: auto;
-  border-top: 1px solid #C3C7CC;
+  border-top: 1px solid #c3c7cc;
 }
 
 .footer li {
