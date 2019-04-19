@@ -1,4 +1,5 @@
 /* General */
+@import url(code.css);
 
 html {
 	font-family: 'Roboto', sans-serif;
@@ -41,54 +42,7 @@ blockquote {
   margin: 16px 40px;
 }
 
-/* GitHub style by Chris Patuzzo | adapted by me */
-
-code, kbd, pre {
-  font-family: 'Roboto Mono', monospace;
-  font-size: 1em;
-}
-
-code, tt {
-  margin: 0 2px;
-  padding: 0 5px;
-  white-space: nowrap;
-  background-color: #f6f8fA;
-  border-radius: 3px;
-}
-
-pre code {
-  margin: 0;
-  padding: 0;
-  white-space: pre;
-  border: none;
-  background: transparent;
-}
-
-.highlight pre {
-  background-color: #f6f8fA;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px;
-}
-
-pre {
-  background-color: #f6f8fA;
-  font-size: 13px;
-  line-height: 19px;
-  overflow: auto;
-  padding: 6px 10px;
-  border-radius: 3px;
-}
-
-pre code, pre tt {
-  background-color: transparent;
-  border: none;
-}
-
 /* Navbar by Jones Joseph | adapted by me */
-
 .navbar {
   height: 50px;
   width: 100%;
@@ -147,21 +101,25 @@ pre code, pre tt {
     right: 0px;
     top: 0px;
   }
+
   .navbar > .navbar-button > label {
     display: inline-block;
     width: 50px;
     height: 50px;
     padding: 13px;
   }
+
   .navbar > .navbar-button > label:hover,.navbar  #navbar-check:checked ~ .navbar-button > label {
     color: #0098d7;
   }
+
   .navbar > .navbar-button > label > span {
     display: block;
     width: 25px;
     height: 10px;
     border-top: 2px solid #0098d7;
   }
+
   .navbar > .navbar-pages {
     position: absolute;
     display: block;
@@ -173,13 +131,16 @@ pre code, pre tt {
     top: 50px;
     left: 0px;
   }
+
   .navbar > .navbar-pages > a {
     display: block;
     width: 100%;
   }
+
   .navbar > #navbar-check:not(:checked) ~ .navbar-pages {
     height: 0px;
   }
+
   .navbar > #navbar-check:checked ~ .navbar-pages {
     height: calc(50px * 2);
     overflow-y: auto;
@@ -189,7 +150,6 @@ pre code, pre tt {
 }
 
 /* Main */
-
 main {
 	display: flex;
 	flex-direction: column;
@@ -197,7 +157,6 @@ main {
 }
 
 /* Home Page */
-
 main > .intro {
 	display: flex;
 	flex-direction: column;
@@ -236,7 +195,6 @@ main > .intro a img:hover {
 }
 
 /* Posts */
-
 main > .post {
 	margin: 0 auto;
 	padding: 0 20px 50px 20px;
@@ -282,7 +240,6 @@ main > .post > p.information {
 }
 
 /* Footer */
-
 .footer {
   width: 100%;
   padding: 30px;
