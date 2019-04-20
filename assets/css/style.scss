@@ -1,0 +1,297 @@
+---
+---
+
+@import 'reset.css';
+@import 'code.css';
+
+/* Variables */
+$font-default: 'Roboto', sans-serif;
+$font-titles:  'Maven Pro', sans-serif;
+$font-intro:   'Roboto Mono', monospace;
+
+$color-primary:         #00d4aa;
+$color-secondary:       #0098d7;
+$color-secondary-hover: #0088aa;
+$color-text:            #808080;
+$color-content-title:   #7c7c7c;
+$color-link:            #006dd6;
+$color-link-hover:      #00417d;
+$color-box-background:  #f6f8fa;
+$color-box-border:      #c6c6c6;
+$color-footer:          #e6e6e6;
+
+/* Macros */
+@mixin icon-color() {
+	filter: invert(41%) sepia(98%) saturate(697%) hue-rotate(160deg) brightness(92%) contrast(108%);
+}
+
+@mixin icon-hover-color() {
+	filter: invert(32%) sepia(71%) saturate(1792%) hue-rotate(166deg) brightness(95%) contrast(103%);
+}
+
+/* General */
+html {
+	font-family: $font-default;
+	font-size: 20px;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-titles;
+}
+
+p {
+	color: $color-text;
+}
+
+a {
+	color: $color-link;
+}
+
+a:hover {
+  color: $color-link-hover;
+}
+
+.box {
+  background-color: $color-box-background;
+  border: 1px solid $color-box-border;
+  overflow: auto;
+  padding: 3px 3px;
+}
+
+blockquote {
+  background-color: $color-box-background;
+  border-left: 5px solid $color-box-border;
+  overflow: auto;
+  padding: 0 10px 0 25px;
+  margin: 16px 40px;
+}
+
+/* Navbar */
+.navbar {
+	display: flex;
+  height: 50px;
+  width: 100%;
+  background-color: $color-primary;
+
+	/* Logo */
+	.navbar-logo {
+		float: left;
+		padding: 10px;
+
+		a img {
+			width: 30px;
+			@include icon-color();
+		}
+
+		a img:hover {
+			@include icon-hover-color();
+		}
+	}
+
+	/* Menu Button */
+	.navbar-button,
+	#navbar-check {
+		 display: none;
+	}
+
+	/* Pages Links */
+	.navbar-pages {
+		position: absolute;
+		right: 0;
+		font-size: 18px;
+
+		a {
+			display: inline-block;
+			position: relative;
+			margin: 13px;
+			color: $color-secondary;
+		}
+
+		a:hover {
+			color: $color-secondary-hover;
+		}
+
+		a:after {
+		  content: '';
+		  height: 2px;
+		  position: absolute;
+		  bottom: 0;
+		  left: 0;
+		  width: 0%;
+		  background: $color-secondary-hover;
+		  transition: all 0.25s ease-in 0s;
+		}
+
+		a:hover:after {
+		  width: 100%;
+		}
+	}
+
+	@media only screen and (max-width:560px) {
+		/* Menu Button */
+		.navbar-button {
+		  display: inline-block;
+		  position: absolute;
+		  right: 0;
+
+			label {
+			  display: inline-block;
+			  padding: 13px;
+
+			  span {
+				  display: block;
+				  width: 25px;
+				  height: 10px;
+				  border-top: 2px solid $color-secondary;
+				}
+			}
+
+			label:hover {
+				span {
+					border-top: 2px solid $color-secondary-hover;
+				}
+			}
+		}
+
+		/* Pages Links */
+		.navbar-pages {
+		  width: 100%;
+		  background-color: $color-primary;
+		  transition: all 0.3s ease-in;
+		  top: 50px;
+
+			a {
+			  display: block;
+			}
+
+			a:after {
+			  transition: all 0.5s ease-in 0s;
+			}
+		}
+
+		/* Dropdown Menu */
+		#navbar-check:not(:checked) ~ .navbar-pages {
+		  height: 0px;
+		  overflow-y: hidden;
+		}
+
+		#navbar-check:checked ~ .navbar-pages {
+		  height: calc(50px * 2);
+		  overflow-y: auto;
+		  border-bottom: 1px solid $color-secondary;
+		  z-index: 1;
+		}
+	}
+}
+
+/* Main */
+main {
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+
+	/* Home Page */
+	.intro {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+		justify-content: center;
+		padding: 0 30px;
+		overflow: auto;
+		text-align: center;
+		background: $color-primary;
+
+		h1 {
+			font-size: 75px;
+			font-weight: 600;
+			color: $color-secondary;
+		}
+
+		p {
+			padding: 30px 0;
+			font-family: $font-intro;
+			font-size: 30px;
+			font-weight: 100;
+			color: $color-secondary;
+		}
+
+		/* Icons */
+		a img {
+			width: 48px;
+			padding: 0;
+			vertical-align: middle;
+			@include icon-color();
+		}
+
+		img:hover {
+			@include icon-hover-color();
+		}
+	}
+
+	/* Posts */
+	.post {
+		margin: 0 auto;
+		padding: 0 20px 50px 20px;
+		width: calc(100% - 20px);
+		overflow: auto;
+
+		/* Maximum Size */
+		@media only screen and (min-width:820px) {
+			width: 800px;
+		}
+
+		/* Post Info */
+		.post-info {
+			margin: 40px 0;
+			border-bottom: 1px solid $color-box-border;
+
+			h1 {
+				font-size: 50px;
+			}
+
+			p {
+				font-size: 12px;
+			}
+
+			p.information {
+				margin: 15px 0;
+				font-size: 12px;
+			}
+		}
+
+		/* Post Content */
+		h1 {
+			margin: 10px 0;
+			font-size: 40px;
+			font-weight: 300;
+			color: $color-content-title;
+		}
+
+		p {
+			margin: 10px 0;
+			font-size: 18px;
+			font-weight: 100;
+			text-align: justify;
+		}
+	}
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  padding: 30px;
+  font-size: 16px;
+  background-color: $color-footer;
+  color: $color-text;
+  text-align: center;
+  overflow: auto;
+  border-top: 1px solid $color-box-border;
+	
+	li {
+		padding: 2px;
+	}
+}
