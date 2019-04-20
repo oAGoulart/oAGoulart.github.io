@@ -1,0 +1,57 @@
+/* Variables */
+$font-default: 'Roboto', sans-serif;
+$font-titles:  'Maven Pro', sans-serif;
+$font-code:    'Roboto Mono', monospace;
+
+$color-primary:         #00d4aa;
+$color-secondary:       #0098d7;
+$color-secondary-hover: #0088aa;
+$color-text:            #808080;
+$color-content-title:   #7c7c7c;
+$color-link:            #006dd6;
+$color-link-hover:      #00417d;
+$color-box-background:  #f6f8fa;
+$color-box-border:      #c6c6c6;
+$color-footer:          #e6e6e6;
+
+html {
+  font-family: $font-default;
+  box-sizing: border-box;
+  font-size: 20px;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+  text-decoration: none;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $font-titles;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+p {
+  color: $color-text;
+}
+
+a {
+  color: $color-link;
+}
+
+a:hover {
+  color: $color-link-hover;
+}
+
+img, video, audio {
+  max-width: 100%;
+  height: auto;
+}
