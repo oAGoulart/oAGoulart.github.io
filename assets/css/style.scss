@@ -1,24 +1,8 @@
 ---
 ---
 
-@import url({{ site.url }}/assets/css/reset.css);
-@import url({{ site.url }}/assets/css/code.css);
-
-/* Variables */
-$font-default: 'Roboto', sans-serif;
-$font-titles:  'Maven Pro', sans-serif;
-$font-intro:   'Roboto Mono', monospace;
-
-$color-primary:         #00d4aa;
-$color-secondary:       #0098d7;
-$color-secondary-hover: #0088aa;
-$color-text:            #808080;
-$color-content-title:   #7c7c7c;
-$color-link:            #006dd6;
-$color-link-hover:      #00417d;
-$color-box-background:  #f6f8fa;
-$color-box-border:      #c6c6c6;
-$color-footer:          #e6e6e6;
+@import 'reset';
+@import 'code';
 
 /* Macros */
 @mixin icon-color() {
@@ -30,30 +14,6 @@ $color-footer:          #e6e6e6;
 }
 
 /* General */
-html {
-  font-family: $font-default;
-}
-
-body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
-  text-decoration: none;
-}
-
-h1, h2, h3, h4, h5, h6 {
-  font-family: $font-titles;
-}
-
-p {
-  color: $color-text;
-}
-
-a {
-  color: $color-link;
-}
-
-a:hover {
-  color: $color-link-hover;
-}
-
 .box {
   background-color: $color-box-background;
   border: 1px solid $color-box-border;
@@ -212,7 +172,7 @@ main {
 
     p {
       padding: 30px 0;
-      font-family: $font-intro;
+      font-family: $font-code;
       font-size: 30px;
       font-weight: 100;
       color: $color-secondary;
@@ -255,11 +215,6 @@ main {
       p {
         font-size: 12px;
       }
-
-      p.information {
-        margin: 15px 0;
-        font-size: 12px;
-      }
     }
 
     /* Post Content */
@@ -275,6 +230,11 @@ main {
       font-size: 18px;
       font-weight: 100;
       text-align: justify;
+    }
+
+    p.information {
+      margin: 15px 0;
+      font-size: 12px;
     }
   }
 }
