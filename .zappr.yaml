@@ -1,0 +1,28 @@
+approvals:
+  minimum: 2
+  ignore: both
+  pattern: "^(:[+]1:|👍|👍🏻|👍🏼|👍🏽|👍🏾|👍🏿)$"
+  veto:
+    pattern: "^(:[-]1:|👎|👎🏻|👎🏼|👎🏽|👎🏾|👎🏿)$"
+  from:
+    collaborators: true
+commit:
+  message:
+    patterns:
+      - "^[a-zA-Z]+"
+specification:
+  title:
+    minimum-length:
+      enabled: true
+      length: 12
+  body:
+    minimum-length:
+      enabled: true
+      length: 20
+  template:
+    differs-from-body: true
+pull-request:
+  labels:
+    required:
+      - completed
+    additional: true
