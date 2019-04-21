@@ -1,7 +1,6 @@
 language: ruby
 before_script:
   - gem install percy-cli
-  - bundle install
 script:
   - bundle exec jekyll build
   - percy snapshot _site/
