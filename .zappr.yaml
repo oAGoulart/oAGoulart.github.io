@@ -1,6 +1,6 @@
 approvals:
-  minimum: 2
-  ignore: both
+  minimum: 1
+  ignore: none
   pattern: "^(:[+]1:|👍|👍🏻|👍🏼|👍🏽|👍🏾|👍🏿)$"
   veto:
     pattern: "^(:[-]1:|👎|👎🏻|👎🏼|👎🏽|👎🏾|👎🏿)$"
