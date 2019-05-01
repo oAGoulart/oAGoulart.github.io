@@ -1,7 +1,6 @@
 language: ruby
-rmv:
-  - 2.3.3
 before_script:
+  - gem install bundler:2.0.1
   - gem install percy-cli
 script:
   - bundle exec jekyll build
