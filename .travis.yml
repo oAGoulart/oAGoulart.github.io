@@ -1,8 +1,10 @@
 language: ruby
+before_install:
+  - gem update --system
+  - gem install bundler:2.0.1
 before_script:
   - gem install percy-cli
 script:
-  - gem install bundler:2.0.1
   - bundle exec jekyll build
   - percy snapshot _site/
 after_script:
