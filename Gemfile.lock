@@ -244,6 +244,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-linux
   x86-mingw32
   x86_64-linux
 
@@ -251,4 +252,4 @@ DEPENDENCIES
   github-pages
 
 BUNDLED WITH
-   1.17.3
+   2.0.1
