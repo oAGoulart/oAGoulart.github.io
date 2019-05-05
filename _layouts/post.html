@@ -3,20 +3,20 @@ layout: default
 ---
 
 <div class="post">
-	<div class="post-info">
-		<h1>{{ page.title }}</h1>
-		<p>
-			{% for flag in page.categories %}
-  			<span class="box">{{ flag }}</span>
-			{% endfor %}
-		</p>
-		<p>
-			<span>{{ page.author }}</span>
-			{% if page.date %}
-				<span> | </span>
-				<span>{{ page.date | date: '%B %d, %Y' }}</span>
-			{% endif %}
-		</p>
-	</div>
-	{{ content }}
+  <div class="post-info">
+    <h1>{{ page.title }}</h1>
+    <p>
+      {% for flag in page.categories %}
+        <span class="box">{{ flag }}</span>
+      {% endfor %}
+    </p>
+    <p>
+      <span>{{ page.author }}</span>
+      {% if page.date %}
+        <span> | </span>
+        <span>{{ page.date | date: '%B %d, %Y' }}</span>
+      {% endif %}
+    </p>
+  </div>
+  {{ content }}
 </div>
