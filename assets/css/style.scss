@@ -1,10 +1,14 @@
 ---
 ---
-
+/* Imports */
 @import 'reset';
 @import 'code';
 
 /* Macros */
+@mixin text-color() {
+  filter: invert(55%) sepia(0%) saturate(10%) hue-rotate(182deg) brightness(91%) contrast(88%);
+}
+
 @mixin icon-color() {
   filter: invert(41%) sepia(98%) saturate(697%) hue-rotate(160deg) brightness(92%) contrast(108%);
 }
@@ -44,10 +48,10 @@ blockquote {
     a img {
       width: 30px;
       @include icon-color();
-    }
 
-    a img:hover {
-      @include icon-hover-color();
+      &:hover {
+        @include icon-hover-color();
+      }
     }
   }
 
@@ -68,25 +72,25 @@ blockquote {
       position: relative;
       margin: 13px;
       color: $color-secondary;
-    }
 
-    a:hover {
-      color: $color-secondary-hover;
-    }
+      &:hover {
+        color: $color-secondary-hover;
+      }
 
-    a:after {
-      content: '';
-      height: 2px;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      width: 0%;
-      background: $color-secondary-hover;
-      transition: all 0.25s ease-in 0s;
-    }
+      &:after {
+        content: '';
+        height: 2px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 0%;
+        background: $color-secondary-hover;
+        transition: all 0.25s ease-in 0s;
+      }
 
-    a:hover:after {
-      width: 100%;
+      &:hover:after {
+        width: 100%;
+      }
     }
   }
 
@@ -125,10 +129,10 @@ blockquote {
 
       a {
         display: block;
-      }
 
-      a:after {
-        transition: all 0.5s ease-in 0s;
+        &:after {
+          transition: all 0.5s ease-in 0s;
+        }
       }
     }
 
@@ -184,10 +188,10 @@ main {
       padding: 0;
       vertical-align: middle;
       @include icon-color();
-    }
 
-    img:hover {
-      @include icon-hover-color();
+      &:hover {
+        @include icon-hover-color();
+      }
     }
   }
 
@@ -195,7 +199,7 @@ main {
   .post {
     margin: 0 auto;
     padding: 0 20px 50px 20px;
-    width: calc(100% - 20px);
+    width: calc(100vw - 20px);
     overflow: auto;
 
     /* Maximum Size */
@@ -236,6 +240,74 @@ main {
       margin: 15px 0;
       font-size: 12px;
     }
+
+    /* Content Spoiler */
+    .spoiler {
+      margin: 0 10px;
+
+      /* Spoiler Content */
+      .spoiler-content,
+      input {
+        display: none;
+      }
+      
+      label,
+      input:checked ~ .spoiler-content {
+        display: block;
+        background-color: $color-box-background;
+        border: solid $color-box-border;
+        padding: 10px 15px;
+      }
+
+      label {
+        border-width: 1px;
+        border-radius: 3px;
+        overflow: auto;
+
+        /* Spoiler Icon */
+        .spoiler-icon {
+          float: right;
+          display: inline-block;
+
+          img {
+            vertical-align: middle;
+            width: 20px;
+            @include text-color();
+          }
+        }
+
+        &:hover {
+          background-color: $color-spoiler-hover;
+        }
+      }
+
+      /* Show Content */
+      input:checked {
+        & ~ .spoiler-content {
+          border-width: 0 1px 1px 1px;
+          border-radius: 0 0 3px 3px;
+        }
+
+        & + label {
+          border-radius: 3px 3px 0 0;
+
+          .spoiler-info:before {
+            content: "Hide Content: ";
+          }
+
+          .spoiler-icon {
+            transform: rotate(180deg);
+          }
+        }
+      }
+      
+      /* Hide Content */
+      input:not(checked) + label {
+        .spoiler-info:before {
+          content: "Show Content: ";
+        }
+      }
+    }
   }
 }
 
@@ -250,6 +322,7 @@ main {
   overflow: auto;
   border-top: 1px solid $color-box-border;
   
+  /* Line */
   li {
     padding: 2px;
   }

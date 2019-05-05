@@ -12,8 +12,10 @@ $color-link:            #006dd6;
 $color-link-hover:      #00417d;
 $color-box-background:  #f6f8fa;
 $color-box-border:      #c6c6c6;
+$color-spoiler-hover:   #e8f2fc;
 $color-footer:          #e6e6e6;
 
+/* General Styles */
 html {
   font-family: $font-default;
   box-sizing: border-box;
@@ -39,16 +41,16 @@ ol, ul {
   list-style: none;
 }
 
-p {
+p, span {
   color: $color-text;
 }
 
 a {
   color: $color-link;
-}
 
-a:hover {
-  color: $color-link-hover;
+  &:hover {
+    color: $color-link-hover;
+  }
 }
 
 img, video, audio {
