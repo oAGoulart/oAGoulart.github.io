@@ -16,12 +16,25 @@ social:
   links:
     - https://twitter.com/oA_Goulart
     - https://github.com/oAGoulart
+collections:
+  tag:
+    output: true
 defaults:
   - scope:
       path: ""
     values:
       image: /assets/images/banner.png
-
+  - scope:
+      path: "_tag"
+    values:
+      layout: "tag"
+      permalink: "/tags/:title/"
+  - scope:
+      path: "_posts"
+    values:
+      layout: "post"
+      permalink: /:categories/:title:output_ext
+      categories: posts
 plugins:
   - jekyll-seo-tag
   - jekyll-mentions
