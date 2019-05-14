@@ -7,7 +7,7 @@ layout: default
     <h1>{{ page.title }}</h1>
     <p>
       {% for tag in page.tags %}
-        <span class="box"><a href="/tags/{{ tag }}/">{{ tag }}</a></span>
+        {% include span_tag_box.html %}
       {% endfor %}
     </p>
     <p>
