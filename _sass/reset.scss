@@ -6,6 +6,7 @@ $font-code:    'Roboto Mono', monospace;
 $color-primary:         #00d4aa;
 $color-secondary:       #0098d7;
 $color-secondary-hover: #0088aa;
+$color-post-background: #ffffff;
 $color-text:            #808080;
 $color-content-title:   #7c7c7c;
 $color-link:            #006dd6;
@@ -13,6 +14,7 @@ $color-link-hover:      #00417d;
 $color-box-background:  #f6f8fa;
 $color-box-border:      #c6c6c6;
 $color-spoiler-hover:   #e8f2fc;
+$color-horizontal-rule: #efefef;
 $color-footer:          #e6e6e6;
 
 /* General Styles */
@@ -41,7 +43,7 @@ ol, ul {
   list-style: none;
 }
 
-p, span {
+p, span, li {
   color: $color-text;
 }
 
@@ -50,6 +52,35 @@ a {
 
   &:hover {
     color: $color-link-hover;
+  }
+}
+
+hr {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border: 0;
+  border-top: 1px solid $color-horizontal-rule;
+}
+
+table:not(.rouge-table) {
+  display: block;
+  overflow: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+
+  tr {
+    color: $color-text;
+    background-color: $color-post-background;
+    border-top: 1px solid $color-box-border;
+
+    &:nth-child(even) {
+      background-color: $color-box-background;
+    }
+  }
+
+  th, td {
+    border: 1px solid $color-box-border;
+    padding: 6px 12px;
   }
 }
 
