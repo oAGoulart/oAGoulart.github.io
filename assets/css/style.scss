@@ -18,13 +18,18 @@
 }
 
 /* General */
-.tag,
-.tag a {
+.tag {
   background-color: $color-box-background;
   border: 1px solid $color-box-border;
   overflow: auto;
   padding: 3px 3px;
   color: $color-text;
+
+  .tag-anex-right {
+    border-left: 1px solid $color-box-border;
+    padding: 3px 0 3px 3px;
+    margin-left: 3px;
+  }
 
   &:hover {
     color: $color-text;
@@ -314,6 +319,15 @@ main {
         .spoiler-info:before {
           content: "Show Content: ";
         }
+      }
+    }
+
+    /* List of Tags */
+    .tags-list {
+      font-size: 12px;
+
+      .tag {
+        margin: 3px;
       }
     }
   }
