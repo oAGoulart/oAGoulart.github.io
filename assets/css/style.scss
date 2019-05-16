@@ -326,6 +326,16 @@ main {
     .tags-list {
       font-size: 12px;
 
+      li {
+        display: inline-block;
+
+        a {
+          display: inline-block;
+          max-width: 100px;
+          overflow: hidden;
+        }
+      }
+
       .tag {
         margin: 3px;
       }
