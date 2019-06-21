@@ -4,6 +4,7 @@ $font-titles:  'Maven Pro', sans-serif;
 $font-code:    'Roboto Mono', monospace;
 
 $color-primary:         #00d4aa;
+$color-primary-hover:   #00c9a1;
 $color-secondary:       #0098d7;
 $color-secondary-hover: #0088aa;
 $color-post-background: #ffffff;
@@ -33,6 +34,11 @@ body, h1, h2, h3, h4, h5, h6, p, ol, ul, a {
   padding: 0;
   font-weight: normal;
   text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-flow: column nowrap;
 }
 
 h1, h2, h3, h4, h5, h6 {
