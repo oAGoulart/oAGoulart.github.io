@@ -46,8 +46,9 @@ blockquote {
 }
 
 /* Navbar */
-.navbar {
+nav {
   display: flex;
+  flex-direction: row;
   height: 50px;
   width: 100%;
   background-color: $color-primary;
@@ -134,8 +135,10 @@ blockquote {
 
     /* Pages Links */
     .navbar-pages {
+      display: flex;
+      flex-direction: column;
       width: 100%;
-      background-color: $color-primary;
+      background-color: $color-primary-hover;
       transition: all 0.3s ease-in;
       top: 50px;
 
@@ -151,13 +154,12 @@ blockquote {
     /* Dropdown Menu */
     #navbar-check:not(:checked) ~ .navbar-pages {
       height: 0px;
-      overflow-y: hidden;
+      overflow: hidden;
     }
 
     #navbar-check:checked ~ .navbar-pages {
       height: calc(50px * 2);
-      overflow-y: auto;
-      border-bottom: 1px solid $color-secondary;
+      overflow: auto;
       z-index: 1;
     }
   }
@@ -344,18 +346,23 @@ main {
 }
 
 /* Footer */
-.footer {
-  width: 100%;
-  padding: 30px;
-  font-size: 16px;
-  background-color: $color-footer;
-  color: $color-text;
-  text-align: center;
-  overflow: auto;
-  border-top: 1px solid $color-box-border;
-  
-  /* Line */
-  li {
-    padding: 2px;
+footer {
+  display: flex;
+  flex-direction: column;
+
+  ul {
+    width: 100%;
+    padding: 30px;
+    font-size: 16px;
+    background-color: $color-footer;
+    color: $color-text;
+    text-align: center;
+    overflow: auto;
+    border-top: 1px solid $color-box-border;
+    
+    /* Line */
+    li {
+      padding: 2px;
+    }
   }
 }

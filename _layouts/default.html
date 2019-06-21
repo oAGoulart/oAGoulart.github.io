@@ -20,7 +20,7 @@
     {% seo %}
   </head>
   <body>
-    <div class="navbar">
+    <nav>
       <input type="checkbox" id="navbar-check">
       <div class="navbar-logo">
         <a href="{{ site.url }}">
@@ -38,14 +38,16 @@
         <a href="{{ site.url }}/about">About</a>
         <a href="{{ site.url }}/posts">Posts</a>
       </div>
-    </div>
+    </nav>
     <main>
       {{ content }}
     </main>
-    <ul class="footer">
-      <li><a href="{{ site.url }}/privacy">Privacy</a> | <a href="{{ site.url }}/disclaimer">Disclaimer</a></li>
-      <li><strong>Made with <span style="color: #E25555;">❤</span> & ☕ !</strong></li>
-      <li>All rights reserved &copy; 2019 Augusto Goulart</li>
-    </ul>
+    <footer>
+      <ul>
+        <li><a href="{{ site.url }}/privacy">Privacy</a> | <a href="{{ site.url }}/disclaimer">Disclaimer</a></li>
+        <li><strong>Made with <span style="color: #E25555;">❤</span> & ☕ !</strong></li>
+        <li>All rights reserved &copy; 2019 Augusto Goulart</li>
+      </ul>
+  </footer>
   </body>
 </html>
