@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "Welcome Human!"
+title:  "Welcome, Human!"
 author: bryan
 date:   2019-04-03 17:07:23 -0300
 tags:

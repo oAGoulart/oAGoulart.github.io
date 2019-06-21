@@ -49,6 +49,36 @@ ol, ul {
   list-style: none;
 }
 
+ol:not(.task-list) {
+  list-style-type: decimal;
+  list-style-position: inside;
+
+  ol:not(.task-list) {
+    list-style-type: upper-roman;
+    padding-left: 20px;
+
+    ol:not(.task-list) {
+      list-style-type: lower-latin;
+      padding-left: 20px;
+    }
+  }
+}
+
+ul:not(.task-list) {
+  list-style-type: disc;
+  list-style-position: inside;
+
+  ul:not(.task-list) {
+    list-style-type: circle;
+    padding-left: 20px;
+
+    ul:not(.task-list) {
+      list-style-type: square;
+      padding-left: 20px;
+    }
+  }
+}
+
 p, span, li {
   color: $color-text;
 }
@@ -87,6 +117,10 @@ table:not(.rouge-table) {
   th, td {
     border: 1px solid $color-box-border;
     padding: 6px 12px;
+  }
+
+  th {
+    background-color: $color-box-background;
   }
 }
 
