@@ -87,6 +87,10 @@ blockquote {
 
       &:hover {
         color: $color-secondary-hover;
+
+        &:after {
+          width: 100%;
+        }
       }
 
       &:after {
@@ -98,10 +102,6 @@ blockquote {
         width: 0%;
         background: $color-secondary-hover;
         transition: all 0.25s ease-in 0s;
-      }
-
-      &:hover:after {
-        width: 100%;
       }
     }
   }
@@ -123,11 +123,11 @@ blockquote {
           height: 10px;
           border-top: 2px solid $color-secondary;
         }
-      }
 
-      label:hover {
-        span {
-          border-top: 2px solid $color-secondary-hover;
+        &:hover {
+          span {
+            border-top: 2px solid $color-secondary-hover;
+          }
         }
       }
     }
