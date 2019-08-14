@@ -7,8 +7,9 @@ var HttpClient = function()
 
     anHttpRequest.onreadystatechange = function()
     {
-      if (anHttpRequest.readyState == 4 && anHttpRequest.status == 200)
-      aCallback(anHttpRequest.responseText);
+      if (anHttpRequest.readyState === 4 && anHttpRequest.status === 200) {
+         aCallback(anHttpRequest.responseText);
+      }
     }
 
     anHttpRequest.open("GET", aUrl, true);
@@ -20,10 +21,11 @@ var HttpClient = function()
 var client = new HttpClient();
 
 // get database events
-client.get('https://oagoulart.firebaseio.com/.json', function(response) {
+client.get("https://oagoulart.firebaseio.com/.json", function(response) {
   // append the contents of the JSON request to the post
-  var obj = document.createElement('span')
-  obj.appendChild(document.createTextNode(JSON.stringify(JSON.parse(response), null, '\t')));
+  var obj = document.createElement("span");
 
-  document.getElementById('events').appendChild(obj);
+  obj.appendChild(document.createTextNode(JSON.stringify(JSON.parse(response), null, "\t")));
+
+  document.getElementById("events").appendChild(obj);
 });
