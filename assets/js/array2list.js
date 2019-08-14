@@ -10,12 +10,12 @@ var HttpClient = function()
       if (anHttpRequest.readyState === 4 && anHttpRequest.status === 200) {
          aCallback(anHttpRequest.responseText);
       }
-    }
+    };
 
     anHttpRequest.open("GET", aUrl, true);
     anHttpRequest.send(null);
-  }
-}
+  };
+};
 
 // create http client
 var client = new HttpClient();
