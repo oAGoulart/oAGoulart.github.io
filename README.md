@@ -10,8 +10,6 @@ This *repo* is where you'll find the **code** that I use in **one of** my person
 
 This is a project I started to explore the features of **Jekyll**, it isn't finished yet because I'm actually working on another website as of right now.
 
-You can find more information about this project in its wiki's homepage. Also you can contact me by the proper chanells.
-
 ### License
 
 All of this *repo* media contents are licensed under the `Creative Commons CC0 Public Domain Dedication License`, and the underlying source code used to format and display those contents is licensed under the `MIT License`, make sure you understand this before commiting anything here.
