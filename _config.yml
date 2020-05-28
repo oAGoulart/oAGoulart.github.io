@@ -35,6 +35,7 @@ defaults:
       layout: "post"
       permalink: /:categories/:title:output_ext
       categories: posts
+remote_theme: oAGoulart/vitrina
 plugins:
   - jekyll-seo-tag
   - jekyll-mentions
