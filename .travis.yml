@@ -1,8 +1,0 @@
-language: ruby
-before_script:
-  - gem install percy-cli
-script:
-  - bundle exec jekyll build
-  - percy snapshot _site/
-after_script:
-  - "curl -u $ASSERTIBLE_TOKEN: 'https://assertible.com/deployments' -d'{'service': 'dba7c6e7-aaee-4fd3-b3e7-a208f55e2200','environmentName': 'production','version': 'v1','ref': '''$(git rev-parse HEAD)''','github': true}'"

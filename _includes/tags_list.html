@@ -1,5 +1,0 @@
-{% for item in site.tag %}
-  {% if item.tag == tag[0] %}
-    <li><a class="tag" href="/tags/{{ tag[0] }}/">{{ tag[0] }}<span class="tag-anex-right">{{ tag | size | minus: 1 }}</span></a></li>
-  {% endif %}
-{% endfor %}
