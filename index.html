@@ -1,20 +1,53 @@
----
-title: Augusto Goulart
-layout: default
----
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <style>
+      @import url('https://fonts.googleapis.com/css?family=Josefin+Sans:400,700&display=swap');
+      
+      a {
+        color: brown;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        color: darkred;
+      }
 
-<div class="intro">
-  <h1>{{ page.title }}</h1>
-  <p>C.S. Undergraduate && Languages Fanatic</p>
-  <p>
-    <a href="https://github.com/oAGoulart/" target="_blank">
-      <img src="{{ site.url }}/assets/images/social/github.svg" alt="GitHub">
-    </a>
-    <a href="https://twitter.com/oA_Goulart" target="_blank">
-      <img src="{{ site.url }}/assets/images/social/twitter.svg" alt="Twitter">
-    </a>
-    <a href={{ site.contact }} target="_blank">
-      <img src="{{ site.url }}/assets/images/social/at.svg" alt="Contact">
-    </a>
-  </p>
-</div>
+      .content {
+        display: flex;
+        font-family: 'Josefin Sans', sans-serif;
+        flex-direction: column;
+        min-height: 100vh;
+        text-align: center;
+      }
+
+      .is-background {
+        background-color: orange;
+      }
+
+      .is-foreground {
+        color: black;
+      }
+
+      .is-vertical {
+        align-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+      
+      .title {
+        font-weight: 700;
+        text-transform: uppercase;
+      }
+    </style>
+  </head>
+  <body class="is-background">
+    <main class="is-foreground">
+      <div class="content is-vertical">
+        <h1 class="title">Not available</h1>
+        <p>this site will be up as soon as possible, check it out later<br>contact <a href="https://github.com/oAGoulart">@oAGoulart</a> for info</p>
+      </div>
+    </main>
+  </body>
+</html>

@@ -1,4 +1,0 @@
----
-title: "Jekyll"
-tag: jekyll
----

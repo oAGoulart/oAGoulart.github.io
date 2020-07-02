@@ -1,4 +1,0 @@
----
-title: "Food"
-tag: food
----

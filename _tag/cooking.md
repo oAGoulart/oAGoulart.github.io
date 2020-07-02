@@ -1,4 +1,0 @@
----
-title: "Cooking"
-tag: cooking
----
