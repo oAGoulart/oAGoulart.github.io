@@ -1,0 +1,95 @@
+{
+  "header": {
+    "brand": {
+      "name": "Augusto Goulart",
+      "image": "/assets/img/logo.png",
+      "link": ""
+    },
+    "menu": {
+      "style": "is-transparent",
+      "end": [
+        {
+          "type": "buttons",
+          "content": [
+            {
+              "style": "is-info is-rounded",
+              "content": "Support",
+              "icon": {
+                "style": "has-text-light",
+                "name": "fa-heart"
+              }
+            }
+          ]
+        },
+        {
+          "style": "has-text-light",
+          "type": "link",
+          "content": "Blog",
+          "link": "/blog",
+          "icon": {
+            "style": "has-text-info",
+            "name": "fa-feed"
+          }
+        },
+        {
+          "style": "has-text-light",
+          "type": "link",
+          "content": "Projects",
+          "link": "/projects",
+          "icon": {
+            "style": "has-text-info",
+            "name": "fa-gear"
+          }
+        },
+        {
+          "style": "has-text-light",
+          "type": "link",
+          "content": "Contact",
+          "link": "/contact",
+          "icon": {
+            "style": "has-text-info",
+            "name": "fa-envelope"
+          }
+        }
+      ]
+    }
+  },
+  "footer": [
+    {
+      "style": "is-3",
+      "content": [
+        {
+          "style": "is-large",
+          "type": "icons",
+          "content": [
+            {
+              "style": "fa-stack-2x",
+              "name": "fa-creative-commons"
+            }
+          ]
+        },
+        {
+          "type": "text",
+          "content": "Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license."
+        }
+      ]
+    },
+    {
+      "style": "is-6",
+      "content": []
+    },
+    {
+      "style": "is-3 has-text-right",
+      "content": [
+        {
+          "type": "image",
+          "name": "Made with Bulma",
+          "link": "https://bulma.io",
+          "file": "/assets/img/made-with-bulma.png",
+          "width": "128",
+          "height": "24"
+        }
+      ]
+    }
+  ]
+}

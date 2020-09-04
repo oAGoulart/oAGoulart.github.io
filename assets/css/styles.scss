@@ -1,0 +1,97 @@
+---
+---
+
+@charset "utf-8";
+
+// this is the default values for color and font
+@import "customize.scss";
+
+$weird-green: hsl(168, 100%, 42%);
+$weird-blue: hsl(192, 100%, 33%);
+
+$primary: $weird-blue;
+$primary-invert: $grey-superlight;
+
+$info: $weird-green;
+$info-invert: $grey-superlight;
+
+$link: $primary;
+$link-invert: $black;
+$link-dark: darkenColor($link);
+
+$text: darkenColor($black);
+
+$border-hover: $primary;
+
+// these are third party libraries
+@import "_bulma.scss";
+@import "_fork_awesome.scss";
+
+// these are the actual theme styles for the elements
+@import "elements.scss";
+@import "code.scss";
+
+
+a,
+a.title {
+  color: $link;
+
+  &:hover {
+    color: $link-invert;
+  }
+}
+
+h1.title {
+  color: $primary;
+}
+
+main {
+  .container.page {
+    border-radius: 10px;
+  }
+
+  .page-head {
+    background-color: $background;
+  }
+}
+
+.card {
+  border-radius: 10px;
+
+  .image img {
+    border-radius: 10px 10px 0px 0px;
+  }
+}
+
+.column.contact {
+  border-radius: 10px;
+}
+
+.hero {
+  &-background {
+    -webkit-filter: none;
+    filter: none;
+  }
+}
+
+.projects figure,
+.projects img,
+.projects .hover {
+  border-radius: 10px;
+}
+
+.timeline-card {
+  .timeline-content {
+    border-radius: 10px;
+  }
+
+  &::after {
+    border-radius: 10px;
+  }
+}
+
+#navbarBrand {
+  img {
+    border-radius: 10px;
+  }
+}

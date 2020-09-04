@@ -1,0 +1,340 @@
+[
+  {
+    "structure": "hero",
+    "name": "Vitrina",
+    "background": "/assets/img/card.png",
+    "content": [
+      {
+        "style": "title is-size-1 is-uppercase has-text-centered",
+        "type": "text",
+        "content": "Augusto Goulart"
+      },
+      {
+        "style": "subtitle is-size-4 has-text-centered",
+        "type": "text",
+        "content": "C.S. undergraduate && languages fanatic!"
+      }
+    ]
+  },
+  {
+    "style": "is-mobile has-text-centered",
+    "structure": "level",
+    "content": [
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-th-large "
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Packages"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "3"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-gear"
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Projects"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "13"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-commenting"
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Languages"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "4"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-paw"
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Cats"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "structure": "section",
+    "title": "About",
+    "content": [
+      {
+        "type": "text",
+        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed. Donec rhoncus urna nec finibus fringilla. Fusce leo nisl, aliquam quis ultricies non, maximus ultricies ligula. Mauris consectetur convallis erat, dapibus blandit erat tristique eu. Donec in turpis facilisis, maximus diam sed, malesuada quam. Donec mattis dapibus augue sed placerat. Quisque eu ullamcorper urna. Sed sed erat nulla."
+      },
+      {
+        "style": "is-centered are-medium",
+        "type": "buttons",
+        "content": [
+          {
+            "style": "is-primary is-rounded",
+            "content": "Contact me",
+            "link": "/contact"
+          },
+          {
+            "style": "is-info is-rounded",
+            "content": "See my projects",
+            "link": "/projects"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "structure": "timeline",
+    "title": "Timeline",
+    "cards": [
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2016"
+          },
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2019"
+          },
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "structure": "grid",
+    "title": "Featured",
+    "cards": [
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "image": "/assets/img/card.png",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "image": "/assets/img/card.png",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed. Donec rhoncus urna nec finibus fringilla. Fusce leo nisl, aliquam quis ultricies non, maximus ultricies ligula. Mauris consectetur convallis erat, dapibus blandit erat tristique eu. Donec in turpis facilisis, maximus diam sed, malesuada quam. Donec mattis dapibus augue sed placerat. Quisque eu ullamcorper urna. Sed sed erat nulla."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "image": "/assets/img/card.png",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed. Donec rhoncus urna nec finibus fringilla. Fusce leo nisl, aliquam quis ultricies non, maximus ultricies ligula. Mauris consectetur convallis erat, dapibus blandit erat tristique eu. Donec in turpis facilisis, maximus diam sed, malesuada quam. Donec mattis dapibus augue sed placerat. Quisque eu ullamcorper urna. Sed sed erat nulla."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "image": "/assets/img/card.png",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pellentesque vitae ligula sem.",
+        "image": "/assets/img/card.png",
+        "content": [
+          {
+            "type": "text",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more",
+                "link": ""
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
