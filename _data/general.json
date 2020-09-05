@@ -12,7 +12,7 @@
           "type": "buttons",
           "content": [
             {
-              "style": "is-info is-rounded",
+              "style": "dialog-modal is-info is-rounded",
               "content": "Support",
               "icon": {
                 "style": "has-text-light",

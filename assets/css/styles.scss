@@ -31,7 +31,10 @@ $border-hover: $primary;
 @import "elements.scss";
 @import "code.scss";
 
+// additional styles
+@import "dialog.scss";
 
+// custom elements
 a,
 a.title {
   color: $link;
@@ -77,6 +80,10 @@ main {
 .projects figure,
 .projects img,
 .projects .hover {
+  border-radius: 10px;
+}
+
+.timeline::after {
   border-radius: 10px;
 }
 

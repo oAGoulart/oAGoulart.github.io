@@ -124,7 +124,7 @@
     "content": [
       {
         "type": "text",
-        "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed. Donec rhoncus urna nec finibus fringilla. Fusce leo nisl, aliquam quis ultricies non, maximus ultricies ligula. Mauris consectetur convallis erat, dapibus blandit erat tristique eu. Donec in turpis facilisis, maximus diam sed, malesuada quam. Donec mattis dapibus augue sed placerat. Quisque eu ullamcorper urna. Sed sed erat nulla."
+        "content": "I'm a computer science undergraduate with a great passion for languages and politics, this is not supposed to be a professional web site, it's mostly another one of my side projects and I don't have any content to put in here right now besides of linking my projects and talking a bit of my programming path, so I'm just filling words to trick people into thinking there's something important in this about section."
       },
       {
         "style": "is-centered are-medium",
@@ -152,11 +152,47 @@
         "content": [
           {
             "type": "text",
+            "content": "2014"
+          },
+          {
+            "type": "text",
+            "content": "I had my introduction to coding through SCM/CLEO scripting, this was the first time I exposed myself to the basic concepts of coding such as variables, loops, functions, etc."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2015"
+          },
+          {
+            "type": "text",
+            "content": "After developing interest for programming I tried to go straight to C - melted my brain in the process. I got proficient in Lua after a couple of weeks getting my hands dirty, most pleasure I ever had with a programming language."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
             "content": "2016"
           },
           {
             "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+            "content": "I started learning C++ and to prepare myself to get proficient next century. In the mean time I made some cool stuff and learned many new concepts."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2018"
+          },
+          {
+            "type": "text",
+            "content": "I finally started to learn more about web programming, including HTML, CSS, Sass, JavaScript, TypeScript and many other technologies. I took a deeper interest in server-side programming with Ruby and PHP. Also, I finished high school."
           }
         ]
       },
@@ -168,7 +204,19 @@
           },
           {
             "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "content": "I started my C.S. course and one of my mentors introduced Python to me. I started to code some Python packages. Also, one of my Professors showed me how awesome Go is and I helped him with his class."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2020"
+          },
+          {
+            "type": "text",
+            "content": "I published my first Go module, Ruby gem, and Python package. I started to code my first video game. I started to participate in a academic research but had to leave due to health and mental issues."
           }
         ]
       }
@@ -179,157 +227,78 @@
     "title": "Featured",
     "cards": [
       {
-        "title": "Pellentesque vitae ligula sem.",
-        "image": "/assets/img/card.png",
+        "title": "Not Available",
+        "image": "https://assets.codepen.io/4503567/internal/screenshots/pens/YzwEoOW.default.png?fit=cover&format=auto&ha=false&height=720&quality=75&v=2&version=1593656294&width=1279",
         "content": [
           {
             "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+            "content": "My default layout for when I have to change codebase."
           },
           {
             "type": "buttons",
             "content": [
               {
                 "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
+                "content": "See on CodePen",
+                "link": "https://codepen.io/oagoulart/pen/YzwEoOW"
               }
             ]
           }
         ]
       },
       {
-        "title": "Pellentesque vitae ligula sem.",
-        "image": "/assets/img/card.png",
+        "title": "RubyGems Profile",
         "content": [
           {
             "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+            "content": "If time is what you want to waste why not checking out my RubyGems.org profile? Maybe consider subscribing to my gems."
           },
           {
             "type": "buttons",
             "content": [
               {
                 "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
+                "content": "Go to RubyGems.org",
+                "link": "https://rubygems.org/profiles/AGoulart"
               }
             ]
           }
         ]
       },
       {
-        "title": "Pellentesque vitae ligula sem.",
+        "title": "Pride",
+        "image": "https://assets.codepen.io/4503567/internal/screenshots/pens/LYprgzM.default.png?fit=cover&amp;format=auto&amp;ha=false&amp;height=720&amp;quality=75&amp;v=2&amp;version=1593652465&amp;width=1279",
         "content": [
           {
             "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed. Donec rhoncus urna nec finibus fringilla. Fusce leo nisl, aliquam quis ultricies non, maximus ultricies ligula. Mauris consectetur convallis erat, dapibus blandit erat tristique eu. Donec in turpis facilisis, maximus diam sed, malesuada quam. Donec mattis dapibus augue sed placerat. Quisque eu ullamcorper urna. Sed sed erat nulla."
+            "content": "Pride background/text modifiers + flags! The classes are Bulma-alike, there are 13 different flags and each one has a has-text and a has-background class."
           },
           {
             "type": "buttons",
             "content": [
               {
                 "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
+                "content": "See on CodePen",
+                "link": "https://codepen.io/oagoulart/pen/LYprgzM"
               }
             ]
           }
         ]
       },
       {
-        "title": "Pellentesque vitae ligula sem.",
+        "title": "Gists",
         "content": [
           {
             "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
+            "content": "Check out my gists, you might find something useful or interesting that is not big enough for an entire new project - maybe don't, I rarely put stuff there PepeLa."
           },
           {
             "type": "buttons",
             "content": [
               {
                 "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Pellentesque vitae ligula sem.",
-        "image": "/assets/img/card.png",
-        "content": [
-          {
-            "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed. Donec rhoncus urna nec finibus fringilla. Fusce leo nisl, aliquam quis ultricies non, maximus ultricies ligula. Mauris consectetur convallis erat, dapibus blandit erat tristique eu. Donec in turpis facilisis, maximus diam sed, malesuada quam. Donec mattis dapibus augue sed placerat. Quisque eu ullamcorper urna. Sed sed erat nulla."
-          },
-          {
-            "type": "buttons",
-            "content": [
-              {
-                "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Pellentesque vitae ligula sem.",
-        "content": [
-          {
-            "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
-          },
-          {
-            "type": "buttons",
-            "content": [
-              {
-                "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Pellentesque vitae ligula sem.",
-        "image": "/assets/img/card.png",
-        "content": [
-          {
-            "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
-          },
-          {
-            "type": "buttons",
-            "content": [
-              {
-                "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "title": "Pellentesque vitae ligula sem.",
-        "image": "/assets/img/card.png",
-        "content": [
-          {
-            "type": "text",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc lacinia ligula justo, non pulvinar neque ullamcorper sed."
-          },
-          {
-            "type": "buttons",
-            "content": [
-              {
-                "style": "is-primary is-outlined is-rounded",
-                "content": "See more",
-                "link": ""
+                "content": "Go to Github Gist",
+                "link": "https://gist.github.com/oAGoulart"
               }
             ]
           }

@@ -1,0 +1,66 @@
+@charset "utf-8";
+
+@mixin fade-in {
+  -webkit-animation-name: fade-in;
+  animation-name: fade-in;
+  -webkit-animation-duration: 0.3s;
+  animation-duration: 0.3s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+@-webkit-keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+@keyframes fade-in {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+$dialog-background: hsl(0, 0%, 96%);
+$dialog-border: hsl(0, 0%, 94%);
+$dialog-divisor: hsl(0, 0%, 78%);
+$dialog-fade: hsla(100, 100%, 0%, 30%);
+
+#dialog {
+  background-color: $dialog-background;
+  border-radius: 10px;
+  display: none;
+  flex-direction: column !important;
+  left: 50%;
+  margin: 10vh auto;
+  padding: 20px 20px;
+  padding-right: 45px;
+  position: fixed;
+  transform: translate(-50%, 50%);
+  width: 50%;
+  z-index: 999;
+
+  &.is-active {
+    @include fade-in();
+    display: flex !important;
+  }
+
+  #dialog-close {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+  }
+}
+
+#dialog-background {
+  background-color: $dialog-fade;
+  content: "";
+  display: none;
+  height: 100vh;
+  left: 0;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  z-index: 998;
+
+  &.is-active {
+    @include fade-in();
+    display: flex !important;
+  }
+}
