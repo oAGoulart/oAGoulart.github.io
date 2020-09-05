@@ -1,0 +1,42 @@
+# Jekyll configuration file for Vitrina
+
+title: Augusto Goulart
+description: Online space where I host most of my content.
+url: https://oagoulart.github.io
+lang: en-US
+paginate: 5
+paginate_path: /blog/:num
+defaults:
+  - scope:
+      path: ""
+    values:
+      image: /assets/img/card.png
+  - scope:
+      path: _posts
+    values:
+      layout: post
+      permalink: /blog/:title
+      categories: blog
+collections:
+  projects:
+    output: false
+  papers:
+    output: false
+remote_theme: oAGoulart/vitrina
+#theme: vitrina
+plugins:
+  - jekyll-seo-tag
+
+# Caution with the configurations below
+exclude: [
+  yarn.lock,
+  Gemfile.lock,
+  vitrina.gemspec,
+  package.json,
+  README.md,
+  CHANGELOG.md,
+  Gemfile, vendor, scripts,
+  node_modules/bulma,
+  node_modules/fork-awesome/*.md,
+  node_modules/fork-awesome/*ss
+]

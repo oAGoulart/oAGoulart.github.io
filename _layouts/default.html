@@ -1,0 +1,50 @@
+---
+layout: compress
+---
+
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: 'en-US' }}">
+  <head>
+    {% include head.html %}
+  </head>
+
+  <body>
+    <!-- Support dialogue -->
+    <div id="dialog">
+      <span id="dialog-close" class="icon"><a><i class="fa fa-lg fa-close"></i></a></span>
+      <h1 class="subtitle has-text-info">
+        Support my work by using the links below
+      </h1>
+      <a href="https://patreon.com/AGoulart" target="_blank">
+        <span class="icon has-text-primary"><i class="fa fa-lg fa-patreon"></i></span>
+        patreon.com/AGoulart
+      </a>
+      <a href="https://ko-fi.com/agoulart" target="_blank">
+        <span class="icon has-text-primary"><i class="fa fa-lg fa-credit-card"></i></span>
+        ko-fi.com/agoulart
+      </a>
+    </div>
+    <div id="dialog-background"></div>
+
+  {% if site.data.general.header %}
+    <header>
+      {% include header.html %}
+    </header>
+
+  {% endif %}
+
+    <main>
+      {{ content }}
+    </main>
+
+  {% if site.data.general.footer %}
+    <footer class="footer">
+      {% include footer.html %}
+    </footer>
+
+  {% endif %}
+
+  {% include foot.html %}
+
+  </body>
+</html>

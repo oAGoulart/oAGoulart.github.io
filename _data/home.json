@@ -1,0 +1,309 @@
+[
+  {
+    "structure": "hero",
+    "name": "Vitrina",
+    "background": "/assets/img/card.png",
+    "content": [
+      {
+        "style": "title is-size-1 is-uppercase has-text-centered",
+        "type": "text",
+        "content": "Augusto Goulart"
+      },
+      {
+        "style": "subtitle is-size-4 has-text-centered",
+        "type": "text",
+        "content": "C.S. undergraduate && languages fanatic!"
+      }
+    ]
+  },
+  {
+    "style": "is-mobile has-text-centered",
+    "structure": "level",
+    "content": [
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-th-large "
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Packages"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "3"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-gear"
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Projects"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "13"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-commenting"
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Languages"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "4"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-paw"
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Cats"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "1"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "structure": "section",
+    "title": "About",
+    "content": [
+      {
+        "type": "text",
+        "content": "I'm a computer science undergraduate with a great passion for languages and politics, this is not supposed to be a professional web site, it's mostly another one of my side projects and I don't have any content to put in here right now besides of linking my projects and talking a bit of my programming path, so I'm just filling words to trick people into thinking there's something important in this about section."
+      },
+      {
+        "style": "is-centered are-medium",
+        "type": "buttons",
+        "content": [
+          {
+            "style": "is-primary is-rounded",
+            "content": "Contact me",
+            "link": "/contact"
+          },
+          {
+            "style": "is-info is-rounded",
+            "content": "See my projects",
+            "link": "/projects"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "structure": "timeline",
+    "title": "Timeline",
+    "cards": [
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2014"
+          },
+          {
+            "type": "text",
+            "content": "I had my introduction to coding through SCM/CLEO scripting, this was the first time I exposed myself to the basic concepts of coding such as variables, loops, functions, etc."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2015"
+          },
+          {
+            "type": "text",
+            "content": "After developing interest for programming I tried to go straight to C - melted my brain in the process. I got proficient in Lua after a couple of weeks getting my hands dirty, most pleasure I ever had with a programming language."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2016"
+          },
+          {
+            "type": "text",
+            "content": "I started learning C++ and to prepare myself to get proficient next century. In the mean time I made some cool stuff and learned many new concepts."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2018"
+          },
+          {
+            "type": "text",
+            "content": "I finally started to learn more about web programming, including HTML, CSS, Sass, JavaScript, TypeScript and many other technologies. I took a deeper interest in server-side programming with Ruby and PHP. Also, I finished high school."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2019"
+          },
+          {
+            "type": "text",
+            "content": "I started my C.S. course and one of my mentors introduced Python to me. I started to code some Python packages. Also, one of my Professors showed me how awesome Go is and I helped him with his class."
+          }
+        ]
+      },
+      {
+        "content": [
+          {
+            "type": "text",
+            "content": "2020"
+          },
+          {
+            "type": "text",
+            "content": "I published my first Go module, Ruby gem, and Python package. I started to code my first video game. I started to participate in a academic research but had to leave due to health and mental issues."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "structure": "grid",
+    "title": "Featured",
+    "cards": [
+      {
+        "title": "Not Available",
+        "image": "https://assets.codepen.io/4503567/internal/screenshots/pens/YzwEoOW.default.png?fit=cover&format=auto&ha=false&height=720&quality=75&v=2&version=1593656294&width=1279",
+        "content": [
+          {
+            "type": "text",
+            "content": "My default layout for when I have to change codebase."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See on CodePen",
+                "link": "https://codepen.io/oagoulart/pen/YzwEoOW"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "RubyGems Profile",
+        "content": [
+          {
+            "type": "text",
+            "content": "If time is what you want to waste why not checking out my RubyGems.org profile? Maybe consider subscribing to my gems."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "Go to RubyGems.org",
+                "link": "https://rubygems.org/profiles/AGoulart"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Pride",
+        "image": "https://assets.codepen.io/4503567/internal/screenshots/pens/LYprgzM.default.png?fit=cover&amp;format=auto&amp;ha=false&amp;height=720&amp;quality=75&amp;v=2&amp;version=1593652465&amp;width=1279",
+        "content": [
+          {
+            "type": "text",
+            "content": "Pride background/text modifiers + flags! The classes are Bulma-alike, there are 13 different flags and each one has a has-text and a has-background class."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See on CodePen",
+                "link": "https://codepen.io/oagoulart/pen/LYprgzM"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Gists",
+        "content": [
+          {
+            "type": "text",
+            "content": "Check out my gists, you might find something useful or interesting that is not big enough for an entire new project - maybe don't, I rarely put stuff there PepeLa."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "Go to Github Gist",
+                "link": "https://gist.github.com/oAGoulart"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

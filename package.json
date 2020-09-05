@@ -1,0 +1,8 @@
+{
+  "name": "goulart",
+  "private": true,
+  "dependencies": {
+    "bulma": "^0.9.0",
+    "fork-awesome": "^1.1.7"
+  }
+}
