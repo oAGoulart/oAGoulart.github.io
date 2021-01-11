@@ -77,7 +77,7 @@ main {
   }
 }
 
-.projects {
+.projects:not(.portfolio) {
   .container .columns {
     padding-bottom: 1rem;
   }
@@ -86,14 +86,6 @@ main {
   img,
   .hover {
     border-radius: 10px;
-  }
-}
-
-.portfolio {
-  figure,
-  img,
-  .hover {
-    border-radius: 0px;
   }
 }
 
