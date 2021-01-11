@@ -20,6 +20,8 @@ defaults:
 collections:
   projects:
     output: false
+  portfolio:
+    output: false
   papers:
     output: false
 remote_theme: oAGoulart/vitrina

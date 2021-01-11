@@ -64,7 +64,31 @@
           {
             "style": "title has-text-primary",
             "type": "text",
-            "content": "13"
+            "content": "14"
+          }
+        ]
+      },
+      {
+        "items": [
+          {
+            "style": "is-large has-text-primary",
+            "type": "icons",
+            "content": [
+              {
+                "style": "fa-stack-2x",
+                "name": "fa-paint-brush"
+              }
+            ]
+          },
+          {
+            "style": "heading has-text-primary",
+            "type": "text",
+            "content": "Works"
+          },
+          {
+            "style": "title has-text-primary",
+            "type": "text",
+            "content": "10"
           }
         ]
       },
