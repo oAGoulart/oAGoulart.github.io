@@ -77,10 +77,24 @@ main {
   }
 }
 
-.projects figure,
-.projects img,
-.projects .hover {
-  border-radius: 10px;
+.projects {
+  .container .columns {
+    padding-bottom: 1rem;
+  }
+
+  figure,
+  img,
+  .hover {
+    border-radius: 10px;
+  }
+}
+
+.portfolio {
+  figure,
+  img,
+  .hover {
+    border-radius: 0px;
+  }
 }
 
 .timeline::after {

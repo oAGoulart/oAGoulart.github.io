@@ -44,6 +44,16 @@
         {
           "style": "has-text-light",
           "type": "link",
+          "content": "Portfolio",
+          "link": "/portfolio",
+          "icon": {
+            "style": "has-text-info",
+            "name": "fa-folder-open "
+          }
+        },
+        {
+          "style": "has-text-light",
+          "type": "link",
           "content": "Contact",
           "link": "/contact",
           "icon": {
@@ -70,7 +80,7 @@
         },
         {
           "type": "text",
-          "content": "Except where otherwise noted, content on this site is licensed under a Creative Commons Attribution 4.0 International license."
+          "content": "Except where otherwise noted, content on this site, other than images, is licensed under a Creative Commons Attribution 4.0 International license."
         }
       ]
     },
