@@ -17,7 +17,7 @@
     ]
   },
   {
-    "style": "is-mobile has-text-centered",
+    "style": "has-text-centered",
     "structure": "level",
     "content": [
       {
