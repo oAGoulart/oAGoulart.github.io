@@ -1,5 +1,5 @@
 ---
 title: Script Wrapper
-link: /
+link: https://github.com/oAGoulart/scriptwrapper
 image: /assets/img/scriptwrapper.png
 ---
