@@ -1,5 +1,5 @@
 ---
 title: Action Square
-link: /
+link: https://action-square.github.io/
 image: /assets/img/actionsquare.png
 ---

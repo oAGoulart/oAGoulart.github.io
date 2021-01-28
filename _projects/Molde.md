@@ -1,6 +1,6 @@
 ---
 title: Molde
-link: /
+link: https://github.com/action-square/molde
 image: /assets/img/molde.png
 overlay:
   text: Action Square
