@@ -275,7 +275,7 @@
         "content": [
           {
             "type": "text",
-            "content": "If time is what you want to waste why not checking out my RubyGems.org profile? Maybe consider subscribing to my gems."
+            "content": "Why not checking out my RubyGems.org profile? Maybe consider subscribing to my gems."
           },
           {
             "type": "buttons",
@@ -284,6 +284,26 @@
                 "style": "is-primary is-outlined is-rounded",
                 "content": "Go to RubyGems.org",
                 "link": "https://rubygems.org/profiles/AGoulart"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "UERGS Infograph",
+        "image": "/assets/img/infograph.png",
+        "content": [
+          {
+            "type": "text",
+            "content": "Rio Grande do Sul State University infograph about the consequences of social distancing on children."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See more works",
+                "link": "/portfolio"
               }
             ]
           }
@@ -323,6 +343,26 @@
                 "style": "is-primary is-outlined is-rounded",
                 "content": "Go to Github Gist",
                 "link": "https://gist.github.com/oAGoulart"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "title": "Dialog",
+        "image": "https://assets.codepen.io/4503567/internal/screenshots/pens/NWNXzPb.default.png?fit=cover&format=auto&ha=true&height=540&quality=75&v=2&version=1599452735&width=960",
+        "content": [
+          {
+            "type": "text",
+            "content": "A simple dialog box system made with SCSS and jQuery."
+          },
+          {
+            "type": "buttons",
+            "content": [
+              {
+                "style": "is-primary is-outlined is-rounded",
+                "content": "See on CodePen",
+                "link": "https://codepen.io/oagoulart/pen/NWNXzPb"
               }
             ]
           }
