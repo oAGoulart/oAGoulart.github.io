@@ -2,7 +2,8 @@ title: Augusto Goulart
 description: This page is just an aggregation of links to some of my projects/works and shit posting.
 url: https://oAGoulart.github.io
 remote_theme: oAGoulart/lesta
-#theme: lesta
+plugins:
+  - jekyll-seo-tag
 
 exclude: [
   Gemfile.lock,
