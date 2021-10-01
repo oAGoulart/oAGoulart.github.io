@@ -1,0 +1,63 @@
+@charset "utf-8";
+
+img.logo {
+  margin-top: 2rem;
+  max-height: 10rem;
+}
+
+img.cat {
+  box-shadow: 0 0 12px #888888;
+  margin: 2rem 0;
+  width: 35vw;
+}
+
+div.links {
+  margin: 0 auto;
+  margin-bottom: 4rem;
+
+  a {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 24px;
+    padding: 0.5rem 1rem;
+    text-align: center;
+  }
+}
+
+div.project {
+  margin: 0.5rem;
+  float: left;
+  width: 200px;
+
+  img {
+    box-shadow: 0 0 4px #888888;
+    width: 100%;
+    height: auto;
+  }
+  
+  .desc {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 18px;
+    padding: 0.25rem 1rem;
+    text-align: center;
+  }
+}
+
+div.gallery {
+  margin: 0 auto;
+  padding: 2rem 0;
+  background-color: #f0f0f0;
+
+  img {
+    vertical-align: top;
+    margin: 0.5rem 0.25rem;
+    width: 430px;
+    height: auto;
+  }
+}
+
+div.foot {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 20px;
+  padding: 1rem;
+  text-align: center;
+}
