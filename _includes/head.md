@@ -3,6 +3,6 @@
 </a>
 
 <div class="links">
-  <a target="_blank" href="/projects">Projects</a>
-  <a target="_blank" href="/gallery">Gallery</a>
+  <a href="/projects">Projects</a>
+  <a href="/gallery">Gallery</a>
 </div>

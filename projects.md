@@ -17,9 +17,9 @@ Here are some of the projects I have made so far, some of them are still a work-
     </div>
   </div>
   <div class="project">
-    <img src="assets/img/scriptwrapper.png" alt="Script Wrapper">
+    <img src="assets/img/yasl.png" alt="YASL">
     <div class="desc">
-      <a target="_blank" href="https://github.com/oAGoulart/scriptwrapper">Script Wrapper</a>
+      <a target="_blank" href="https://github.com/oAGoulart/yasl">YASL</a>
     </div>
   </div>
   <div class="project">
