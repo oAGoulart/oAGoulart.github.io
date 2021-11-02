@@ -25,7 +25,7 @@ To find that, all we need to do is load the _PE file_ into memory and parse its 
   </figcaption>
 </figure> 
 
-Because the position is a relative address we then must find the offset from the start of the file (as we loaded the binary file into a buffer), which is given by `offset = virtualAddress - section.VirtualAddress + section.PointerToRawData` where `section` is the section where the _Import Table_ is located (you must find it, see [how I did](https://github.com/oAGoulart/wrappem/blob/912c3f3744b170b0a19a864b3fe969affebe9c70/wrappem.cpp#L98-L112) as an example).
+Because the position is a relative address we then must find the offset from the start of the file (as we loaded the binary file into a buffer), which is given by `offset = virtualAddress - section.VirtualAddress + section.PointerToRawData` where `section` is the section where the _Import Table_ is located (you must find it, see [how I did](https://github.com/oAGoulart/wrappem/blob/6d0c7f1827c63ccea13e7c8b4140410cd1ea44b5/wrappem.cpp#L97-L109) as an example).
 
 ### Adding new entry to the Import Table
 
