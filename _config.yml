@@ -3,6 +3,10 @@ description: This page is just an aggregation of links to some of my projects/wo
 url: https://oAGoulart.github.io
 remote_theme: oAGoulart/lesta
 #theme: lesta
+collections:
+  projects:
+    output: false
+permalink: /:title
 plugins:
   - jekyll-seo-tag
 
