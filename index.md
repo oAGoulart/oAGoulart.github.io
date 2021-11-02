@@ -6,7 +6,7 @@ layout: default
 
 Hello there! If you are here and don't know me, I'm **_José Augusto dos Santos Goulart_** (or just **Augusto**) a computer science undergraduate with a great passion for linguistics, design, history, politics, and you guessed it, computers. This page is just an aggregation of links to some of my projects/works and shit posting.
 
-***
+<hr>
 
 ## About me
 

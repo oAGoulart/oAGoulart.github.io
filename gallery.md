@@ -6,7 +6,7 @@ layout: default
 
 This page is a collection of some graphics, drawings, or other stuff that I made but is not related to programming.
 
-***
+<hr>
 
 <div class="gallery">
   <img src="assets/img/northeast.png" alt="Gallery image">
