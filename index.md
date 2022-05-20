@@ -16,4 +16,6 @@ Here, have a drawing of my cat **_Lily_** I made when I started learning how to 
 
 <img class="cat" src="assets/img/lily.png" alt="My cat">
 
+[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W41F3V8)
+
 {% include foot.md %}
