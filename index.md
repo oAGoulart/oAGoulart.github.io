@@ -18,4 +18,8 @@ Here, have a drawing of my cat **_Lily_** I made when I started learning how to 
 
 [![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/W7W41F3V8)
 
+<a href="https://www.patreon.com/bePatron?u=30486735" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+
+<iframe src="https://github.com/sponsors/oAGoulart/button" title="Sponsor oAGoulart" height="35" width="116" style="border: 0;"></iframe>
+
 {% include foot.md %}
