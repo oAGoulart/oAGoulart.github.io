@@ -9,6 +9,7 @@ This page is a collection of some graphics, drawings, or other stuff that I made
 <hr>
 
 <div class="gallery">
+  <img src="assets/img/avd.png" alt="Gallery image">
   <img src="assets/img/northeast.png" alt="Gallery image">
   <img src="assets/img/northeast_rev.png" alt="Gallery image">
   <img src="assets/img/pico_rev.png" alt="Gallery image">
