@@ -14,6 +14,9 @@ This page is a collection of some graphics, drawings, or other stuff that I made
   <img src="assets/img/northeast_rev.png" alt="Gallery image">
   <img src="assets/img/pico_rev.png" alt="Gallery image">
   <img src="assets/img/pico.png" alt="Gallery image">
+  <img src="assets/img/unihacker-banner.png" alt="Gallery image">
+  <img src="assets/img/ppges-banner.png" alt="Gallery image">
+  <img src="assets/img/cc-banner.png" alt="Gallery image">
   <img src="assets/img/janine_icons.png" alt="Gallery image">
   <img src="assets/img/janine_icons_rev.png" alt="Gallery image">
   <img src="assets/img/janine.png" alt="Gallery image">
