@@ -9,7 +9,7 @@ language: en-US
 copyright: Some rights reserved
 robots: index,follow
 #url: https://joseaugustogoulart.com
-repository: https://github.com/oAGoulart/oAGoulart.github.io
+repository: oAGoulart/oAGoulart.github.io
 author: Augusto Goulart
 safe: false
 timezone: America/Sao_Paulo
