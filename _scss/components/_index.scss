@@ -1,0 +1,10 @@
+/*
+ * Components index file
+ */
+
+// configure constants before using them
+@forward 'constants';
+
+// import all components
+@forward 'base';
+@forward 'lists';

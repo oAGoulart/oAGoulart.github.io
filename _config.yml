@@ -1,19 +1,49 @@
-title: Augusto Goulart
-description: This page is just an aggregation of links to some of my projects/works and random stuff.
-url: https://joseaugustogoulart.com
-remote_theme: oAGoulart/lesta
-#theme: lesta
+#title: Augusto Goulart
+#description: This page is just an aggregation of links to some of my projects/works and random stuff.
+keywords: [
+  "goulart", "augustogoulart", "alegrete", "baitachao",
+  "unipampa", "unipampaalegrete", "pampa"
+]
+subject: Augusto Goulart's personal page
+language: en-US
+copyright: Some rights reserved
+robots: index,follow
+#url: https://joseaugustogoulart.com
+author: Augusto Goulart
+safe: false
+timezone: America/Sao_Paulo
+
 collections:
   projects:
     output: false
-permalink: /:title
+  posts:
+    output: true
+    permalink: /blog/:name
+permalink: /:slug
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
 plugins:
+  - jekyll-github-metadata
+  - jekyll-include-cache
   - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-relative-links
+
+sass:
+  style: compressed
+  sass_dir: _scss
+  cache: false
 
 exclude: [
-  Gemfile.lock,
-  lesta.gemspec,
-  README.md,
-  CHANGELOG.md,
-  Gemfile, vendor, scripts
+  "README.md", ".sass-cache/", ".jekyll-cache/", "gemfiles/", "Gemfile",
+  "Gemfile.lock", "node_modules", "vendor/bundle/", "vendor/cache/",
+  "vendor/gems/", "vendor/ruby/"
 ]
