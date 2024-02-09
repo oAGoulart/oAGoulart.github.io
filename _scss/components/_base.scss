@@ -12,6 +12,21 @@ td.has-text-info { // TODO: create own class
   width: 20%;
 }
 
+.torso {
+  padding: 2rem 0;
+  min-height: 100vh;
+}
+
+.posts {
+  .post-item {
+    margin-bottom: 1rem;
+
+    span {
+      float: right;
+    }
+  }
+}
+
 footer.footer {
   border-top: 2px dashed bulma.$info;
   background-color: transparent;

@@ -1,5 +1,5 @@
-#title: Augusto Goulart
-#description: This page is just an aggregation of links to some of my projects/works and random stuff.
+title: Augusto Goulart
+description: This page is just an aggregation of links to some of my projects/works and random stuff.
 keywords: [
   "goulart", "augustogoulart", "alegrete", "baitachao",
   "unipampa", "unipampaalegrete", "pampa"
@@ -19,7 +19,7 @@ collections:
     output: false
   posts:
     output: true
-    permalink: /blog/:name
+    permalink: /posts/:slug
 permalink: /:slug
 
 defaults:
