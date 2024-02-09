@@ -22,14 +22,14 @@ layout: null
           </div>
           <div id="navbarTop" class="navbar-menu">
             <div class="navbar-end">
-              {% assign pages = "About,Projects,Blog" | split: "," %}
+              {% assign pages = "About,Projects,Posts" | split: "," %}
               {% for item in pages %}
                 {% if item == page.title %}
                   <span class="navbar-item">{{ page.title }}</span>
                 {% elsif item == "About" %}
                   <a class="navbar-item" href="/">{{ item }}</a>
                 {% else %}
-                  <a class="navbar-item" href="{{ item | downcase | prepend: '/' | append: '/' }}">{{ item }}</a>
+                  <a class="navbar-item" href="{{ item | downcase | prepend: '/' }}">{{ item }}</a>
                 {% endif %}
               {% endfor %}
               <!-- <div class="navbar-item">
