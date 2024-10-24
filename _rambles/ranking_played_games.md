@@ -1,6 +1,6 @@
 ---
 layout: ramble
-date: 2024/10/04 20:22:35 +3
+date: 2024/10/04 20:22:35 +0300
 title: Ranking games I've played
 ---
 
@@ -10,6 +10,7 @@ Completely objective, unbiased, and neutral ranking -- meaning, my own subjectiv
 S++  Disco Elysium
 S++  The Witcher 3: Wild Hunt
 S++  Alien: Isolation
+S++  Divinity: Original Sin 2
 S++  The Wolf Among Us
 S+   Batman: The Enemy Within - The Telltale Series
 S+   Henchman Story
@@ -54,6 +55,7 @@ A-   Gamedec
 A-   DnD Adventure: Wizard's Choice
 A-   Sorcery! Part 4
 A-   The Witcher 2: Assassins of Kings
+A-   Faster Than Light
 A-   Roadwarden
 A-   Terraria
 B+   The Elder Scrolls V: Skyrim
@@ -108,7 +110,6 @@ F    Anomaly Warzone Earth
 F    Beholder
 F    Tacoma
 F    Death Coming
-F    Faster Than Light
 F    The Low Road
 F    We. The Revolution
 F    Cultist Simulator
