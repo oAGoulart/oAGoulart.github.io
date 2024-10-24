@@ -1,3 +1,0 @@
-todo:
-  keyword: ['@makeAnIssue', '@todo', 'TODO', 'FIXME']
-  bodyKeyword: ['@body','BODY']

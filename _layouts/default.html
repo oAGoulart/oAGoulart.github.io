@@ -1,61 +1,19 @@
 ---
-layout: null
 ---
-
-<!doctype html>
-<html lang="{{ site.language | default: 'en-US' }}" class="dark-palette">
-{% include head.html %}
-<body>
-  <main>
-    <div style="text-align: center; padding: 1rem; background-color: darkorange; color: white; font-weight: bolder;">
-      NOTE: This site is still under construction (new theme for 2024).
-    </div>
-    <div class="columns">
-      <div class="column is-8 is-offset-2">
-        <nav class="navbar" role="navigation" aria-label="main navigation">
-          <div class="navbar-brand">
-            <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false" data-target="navbarTop">
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-              <span aria-hidden="true"></span>
-            </a>
-          </div>
-          <div id="navbarTop" class="navbar-menu">
-            <div class="navbar-end">
-              {% assign pages = "About,Projects,Posts" | split: "," %}
-              {% for item in pages %}
-                {% if item == page.title %}
-                  <span class="navbar-item">{{ page.title }}</span>
-                {% elsif item == "About" %}
-                  <a class="navbar-item" href="/">{{ item }}</a>
-                {% else %}
-                  <a class="navbar-item" href="{{ item | downcase | prepend: '/' }}">{{ item }}</a>
-                {% endif %}
-              {% endfor %}
-              <!-- <div class="navbar-item">
-                <div class="buttons">
-                  <a class="button is-primary">
-                    <i class="icon-search"></i>
-                  </a>
-                  <a class="button is-light">
-                    <i class="icon-sun"></i>
-                  </a>
-                </div>
-              </div> -->
-            </div>
-          </div>
-        </nav>
-        <div class="torso">
-          {{ content }}
-        </div>
-        <footer class="footer">
-          <div class="content has-text-centered">
-            <p>
-              <strong>Augusto Goulart</strong> &copy; 2019-2024. Some rights reserved.
-            </p>
-          </div>
-        </footer>
-      </div>
-    </div>
-  </main>
+<!DOCTYPE html>
+<html leng="en">
+  <head>
+    <meta charset="utf-8">
+    <title>{{ site.title }} | {{ page.title }}</title>
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    {% include styles.html %}
+  </head>
+  <body>
+    {% include header.html %}
+    {{ content }}
+    {% include footer.html %}
+  </body>
 </html>

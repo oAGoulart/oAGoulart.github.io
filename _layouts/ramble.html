@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+<h2 id="{{ page.title | slugify }}">{{ page.title }}</h2>
+<p>
+  publié en {{ page.date }}<br>
+  {% if page.lastedit %}dernière révision en {{ page.lastedit }}{% endif %}
+</p>
+{{ content }}

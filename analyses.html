@@ -1,0 +1,19 @@
+---
+layout: default
+title: "std::vector<Analysis*>"
+---
+
+<div class="ascii">
+<span class="comment">// initialize vector with static object references</span>
+<span class="comment">// most objects use derived classes</span>
+this-&#62{% include value.html type="deftype" value="analyses_" -%}
+.{% include value.html type="defname" value="insert" -%}
+(this-&#62{% include value.html type="deftype" value="analyses_" -%}
+.{% include value.html type="defname" value="end" -%}
+(), {
+  {% for item in site.analyses -%}
+    <a style="line-height: 1.5em;" href="{{ item.url }}">{{ item.analysis.type }}::{{ item.analysis.name | crockford_encode }}</a>
+  {%- if forloop.last != true %},<br>{% endif %}
+  {%- endfor %}
+});
+</div>

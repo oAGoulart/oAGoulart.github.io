@@ -1,0 +1,5 @@
+<span class="value {{ include.type | default "keyword" }}">
+  {%- if include.pre %}{{ include.pre }}{% endif -%}
+  {{ include.value | default "null" }}
+  {%- if include.post %}{{ include.post }}{% endif -%}
+</span>

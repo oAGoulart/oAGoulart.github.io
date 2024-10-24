@@ -1,0 +1,9 @@
+---
+layout: default
+title: "std::vector<Ramble*>"
+---
+
+{% for item in site.rambles -%}
+  <a style="line-height: 1.5em;" href="{{ item.url }}">{{ item.title }}</a>
+  {% if forloop.last != true %}<br>{% endif %}
+{%- endfor %}

@@ -1,0 +1,49 @@
+---
+layout: default
+---
+
+{% assign title_base32 = page.analysis.name | crockford_encode %}
+
+<h2 id="game{{ title_base32 | downcase }}">{{ page.analysis.type }}::{{ title_base32 }}</h2>
+<p>t. {{ page.analysis.time }}</p>
+
+{% if page.description -%}
+  <p>{{ page.description }}</p>
+{% endif %}
+
+{% if page.analysis.sheet -%}
+  <p class="media-title">▚▚▚&emsp;Quick Reference Sheet&emsp;▞▞▞</p>
+  <div class="media">
+    <table class="gameinfo">
+      <thead>
+        <tr>
+          <th style="width:20ch">KEY</th>
+          <th style="width:32ch">VALUE</th>
+          <th>NOTES</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for row in page.analysis.sheet %}
+          <tr>
+            <td>{{ row.key | default: "t_Unknown" }}</td>
+            <td>
+              {% if row.value.type == "array" %}
+                {% for item in row.value.raw %}
+                  {% include value.html type="deftype" value=forloop.index0 pre="@" post=":" %}
+                  {{ item }}<br>
+                {% endfor %}
+              {% elsif row.value.type == "string" %}
+                {% include value.html type="string" value=row.value.raw pre="“" post="”" %}
+              {% else %}
+                {% include value.html type=row.value.type value=row.value.raw %}
+              {% endif %}
+            </td>
+            <td>{{ row.note | default: "&nbsp;" }}</td>
+          </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% endif %}
+
+{{ content }}

@@ -1,0 +1,100 @@
+<style>
+  :root {
+    color-scheme: light dark;
+  }
+
+  a { text-decoration: overline; }
+
+  p {
+    margin: 0;
+    margin-bottom: 1em;
+  }
+
+  ul, ol { margin-top: 0; }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    place-content: center;
+    max-width: 800px;
+    width: 100%;
+    min-height: 100vh;
+    margin: 0 auto;
+    font-family: monospace;
+  }
+
+  header { width: 100%; margin-bottom: auto; }
+  header p {
+    margin: 0;
+    font-family: monospace;
+  }
+
+  footer { padding-bottom: 2em; margin-top: auto; }
+  footer p {
+    margin: 0;
+    font-size: .85em;
+    text-align: center;
+  }
+
+  h1,h2,h3,h4,h5,h6 {
+    margin-bottom: 0;
+  }
+
+  div.media {
+    border: 1px solid;
+    padding: 10px;
+    width: 100%;
+  }
+
+  p.media-title {
+    font-size: 1.25em;
+    font-weight: 600;
+    margin: 0;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+
+  table.gameinfo { font-family: monospace; }
+  table { border-collapse: collapse; width: 100% }
+  table thead tr th { border-bottom: 3px solid; }
+  table tbody tr:not(:last-child) td { border-bottom: 1px solid; padding-bottom: 8px; }
+  table tbody tr td:not(:last-child) { border-right: 1px solid; }
+  table th, table td{ padding: 4px 8px; vertical-align: top; }
+
+  div.ascii {
+    white-space: pre;
+    line-height: 1em;
+  }
+
+  div.ascii span.vpad { line-height: 1.25em; }
+
+  div.cmdln { margin: 1.5em 0; }
+  div.cmdln p { margin: 0; }
+
+  div.sectionmark { margin-top: 1em; }
+  div.sectionmark p { margin: 0; }
+
+  div.disclaimer p { text-align: justify; }
+
+  span.comment { color: #7b889f; }
+  span.value.number { color: #d19a66; }
+  span.value.string { color: #98c379; }
+  span.value.defname { color: #61afef; }
+  span.value.deftype { color: #e5c07b; }
+  span.value.keyword { color: #c678dd; }
+
+  @media (prefers-color-scheme: light) {
+    span.comment { color: #697791; }
+    span.value.number { color: #ce4908; }
+    span.value.string { color: #3f7b13; }
+    span.value.defname { color: #0075d5; }
+    span.value.deftype { color: #827616; }
+    span.value.keyword { color: #b900f0; }
+  }
+
+  @supports (font-size-adjust: 1) {
+    article {
+        font-size-adjust: 0.5;
+    }
+  }
+</style>
