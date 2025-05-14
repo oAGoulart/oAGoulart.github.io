@@ -1,6 +1,8 @@
 {% assign pct = include.pct | default: 0 | plus: 0 | at_most: 100 | divided_by: 3.3 | floor -%}
 progress pct.
+<br>
 {% for i in (1..pct) %}█
 {%- if forloop.last %}{% if pct == 30 %}█{% else %}▌{% endif %}{% endif %}
 {%- else %}▌{% endfor %}{% assign spaces = 30 | minus: pct %}
 {%- for i in (1..spaces) %}&nbsp;{% endfor %}▌ {{ include.pct }}&#37;
+<br>
