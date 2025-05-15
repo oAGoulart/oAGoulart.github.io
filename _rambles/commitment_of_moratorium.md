@@ -1,6 +1,6 @@
 ---
 layout: ramble
-date: 2025/05/13 20:02:00 +3
+date: 2025/05/13 20:02:00 -3
 title: Commitment of moratorium on use, research, and development of anti-human technology
 ---
 

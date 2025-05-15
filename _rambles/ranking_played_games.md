@@ -1,6 +1,6 @@
 ---
 layout: ramble
-date: 2024/10/04 20:22:35 +0300
+date: 2024/10/04 20:22:35 -3
 title: Ranking games I've played
 ---
 

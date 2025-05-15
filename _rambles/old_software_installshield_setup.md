@@ -1,6 +1,6 @@
 ---
 layout: ramble
-date: 2024/09/26 20:39:32 +3
+date: 2024/09/26 20:39:32 -3
 title: Old software InstallShield setup
 ---
 

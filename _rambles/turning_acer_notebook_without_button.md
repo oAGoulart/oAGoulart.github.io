@@ -1,6 +1,6 @@
 ---
 layout: ramble
-date: 2024/10/03 21:10:01 +3
+date: 2024/10/03 21:10:01 -3
 title: Turning Acer notebook on without power button
 ---
 
