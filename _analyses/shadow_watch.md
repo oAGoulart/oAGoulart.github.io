@@ -5,7 +5,7 @@ description: >-
   "Shadow Watch is a turn-based, isometric game of stealth, intrigue and combat. You have been given command of a team of six highly trained operatives with orders to find out who is behind the attacks against those working on the ISS." - Red Storm Entertainment
 analysis:
   name: Shadow Watch
-  time: 2024/09/23 15:07:00 -0300
+  time: 2024-09-23 15:07:00 -0300
   type: Game
   sheet:
     - key: s_Title
