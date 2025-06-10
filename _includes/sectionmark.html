@@ -1,6 +1,6 @@
 {% capture sectioncount %}{% increment page.sectioncount %}{% endcapture %}
 {% assign name = include.name | default: "unknown" %}
 {% if name == "unknown" %}{% assign name = name | append: sectioncount %}{% endif %}
-<div id="{{ name }}" class="sectionmark"></div>
+<div id="{{ name }}" class="sectionmark">
   <p><span class="value defname">\section*{</span>{{ name }}<span class="value defname">}</span></p>
 </div>
