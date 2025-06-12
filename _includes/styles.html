@@ -41,6 +41,22 @@
     margin-bottom: 0;
   }
 
+  blockquote p::before {
+    content: "\201C";
+  }
+
+  blockquote p::after {
+    content: "\201D";
+  }
+
+  blockquote p {
+    margin-bottom: 0;
+  }
+
+  blockquote + p {
+    text-align: right;
+  }
+
   div.media {
     border: 1px solid;
     padding: 10px;
