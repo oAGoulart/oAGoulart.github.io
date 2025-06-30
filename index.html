@@ -12,22 +12,23 @@ title: uintptr_t
   <p>$ ls</p>
   <p>
     <a href="#runarc">runarc</a>.ts
-    <a href="#wrappem">wrappem</a>.py
+    <a href="#qrcode">qrcode</a>.c
+    <a href="#wrappem">wrappem</a>.cpp
     <a href="#dossier113">dossier113</a>.tex
     <a href="#pepi">pepi</a>.cpp
+    <span>lua-walk.lua</span>
     <span>srlua-vc.c</span>
+    <span>solis.cls</span>
+    <span>hanoi-game.c</span>
     <span>markout.py</span>
     <span>roedor.go</span>
-    <span>solis.cls</span>
     <span>libpampa.c</span>
     <span>sea-trade.lua</span>
     <span>ascii-art.c</span>
     <span>libvhdl.vhd</span>
     <span>binc.c</span>
-    <span>hanoi-game.c</span>
     <span>tetris-game.c</span>
     <span>market-sim.c</span>
-    <span>lua-walk.lua</span>
     <span>potato.rb</span>
   </p>
 </div>
@@ -52,6 +53,16 @@ title: uintptr_t
   PROPRIETARY CLOSED-SOURCE
 </p>
 
+{% include sectionmark.html name="qrcode" %}
+<div class="ascii">
+        On-terminal, QR-Code generation and printing
+                  <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
+{% include progressbar.html pct=60 %}
+</div>
+<p>
+  Generate QR-Codes from version 1 to 5 and print them on terminal. See <a href="https://github.com/oAGoulart/qrcode" target="_blank">here</a>.
+</p>
+
 {% include sectionmark.html name="wrappem" %}
 <div class="ascii">
      __________________________________
@@ -65,13 +76,13 @@ title: uintptr_t
                                             v. 2.0.0
                   <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
 
-{% include progressbar.html pct=50 %}
+{% include progressbar.html pct=29 %}
 </div>
 <p>
   <b>UPDATE [2025/06/10]:</b> I've found a refactored version of WrappEm in one of my backup drives. I'll take the reusable parts and use for a version 1.0, until this version is done.
 </p>
 <p>
-  This new version (2.0.0) is being re-written in Python for easier adaptability into other formats in the future.
+  This new version (2.0.0) is being re-written for easier adaptability into other formats in the future.
   It will include additional command-line options to check/extract/patch PE files without relying on other tools.
 </p>
 <p>
@@ -79,7 +90,7 @@ title: uintptr_t
   The import table is used by Windows to load required libraries before calling the PE file entry function (i.e. /ENTRY on MSBuild).
 </p>
 <p>
-  The most common use is to patch a system library (i.e. USER32.dll) which is often not in the root folder of an executable (.exe) to load a payload DLL, as this would not require any file in the root folder to be overwritten.
+  The most common use is to patch a system library (i.e. USER32.dll) that are often not in the root folder of an executable (.exe) to load a payload DLL, as this would not require any file in the root folder to be overwritten.
 </p>
 <p>
   This can be done manually but requires a lot of offset calculations, so a tool like wrappem is a time-saver and also eliminates any chances of miscalculations.
