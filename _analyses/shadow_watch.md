@@ -11,13 +11,13 @@ analysis:
     - key: s_Title
       value:
         type: string
-        raw: Shadow Watch
+        raw: Shadow Watch (project "York")
     - key: s_Devs
       value:
         type: string
         raw: Red Storm Entertainment
       note: see &#60;<a href="http://www.redstorm.com">http://www.redstorm.com</a>&#62;
-    - key: e_Crm
+    - key: e_Drm
       value:
         type: defname
         raw: GOG
@@ -52,7 +52,7 @@ analysis:
     - key: s_Engine
       value:
         type: string
-        raw: York
+        raw: Red Storm Engine
       note: proprietary Java engine
     - key: v_Imports
       value:
