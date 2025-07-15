@@ -11,7 +11,8 @@ analysis:
     - key: s_Title
       value:
         type: string
-        raw: Shadow Watch (project "York")
+        raw: Shadow Watch
+      note: project "York"
     - key: s_Devs
       value:
         type: string
