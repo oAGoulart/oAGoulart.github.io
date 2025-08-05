@@ -13,6 +13,7 @@ title: uintptr_t
   <p>
     <a href="#runarc">runarc</a>.ts
     <a href="#libluacrc32">libluacrc32</a>.c
+    <a href="#libluatsc">libluatsc</a>.c
     <a href="#qrcode">qrcode</a>.c
     <a href="#wrappem">wrappem</a>.cpp
     <a href="#dossier113">dossier113</a>.tex
@@ -59,12 +60,23 @@ title: uintptr_t
 {% include sectionmark.html name="libluacrc32" %}
 <div class="ascii">
             Lua 5.4 library to calculate 32-bits CRC
-                                      v. 1.1.0 Ms-RL
+                                      v. 1.1.1 Ms-RL
                   <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
 {% include progressbar.html pct=100 %}
 </div>
 <p>
-  Code includes four pre-generated lookup tables for six different methods. Read more about it <a href="https://github.com/oAGoulart/libluacrc32" target="_blank">here</a>.
+  Supports SSE 4.2; code includes four pre-generated lookup tables for six different methods. Read more about it <a href="https://github.com/oAGoulart/libluacrc32" target="_blank">here</a>.
+</p>
+
+{% include sectionmark.html name="libluatsc" %}
+<div class="ascii">
+    Lua 5.4 library to read 64-bit time-stamp counter and TSC_AUX value
+                                                         v. 1.0.0 Ms-RL
+                                     <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
+{% include progressbar.html pct=100 %}
+</div>
+<p>
+  Supports SSE 2. Read more about it <a href="https://github.com/oAGoulart/libluatsc" target="_blank">here</a>.
 </p>
 
 {% include sectionmark.html name="qrcode" %}
