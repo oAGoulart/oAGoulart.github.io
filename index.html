@@ -11,28 +11,38 @@ title: uintptr_t
   </p>
   <p>$ ls</p>
   <p>
+    <a href="#qrcode">qrcode</a>.c
     <a href="#runarc">runarc</a>.ts
     <a href="#libluacrc32">libluacrc32</a>.c
-    <a href="#qrcode">qrcode</a>.c
+    <a href="#libluatsc">libluatsc</a>.c
     <a href="#wrappem">wrappem</a>.cpp
     <a href="#dossier113">dossier113</a>.tex
     <a href="#pepi">pepi</a>.cpp
-    <span>lua-walk.lua</span>
     <span>srlua-vc.c</span>
-    <span>solis.cls</span>
     <span>hanoi-game.c</span>
+    <span>solis.cls</span>
     <span>markout.py</span>
     <span>roedor.go</span>
-    <span>libpampa.c</span>
     <span>sea-trade.lua</span>
-    <span>ascii-art.c</span>
-    <span>libvhdl.vhd</span>
-    <span>binc.c</span>
-    <span>tetris-game.c</span>
-    <span>market-sim.c</span>
-    <span>potato.rb</span>
+    <span>lua-walk.lua</span>
   </p>
 </div>
+
+{% include sectionmark.html name="qrcode" %}
+<div class="ascii">
+        Command-line QR Code generation and printing
+                                      v. 1.20.0 Ms-RL
+              <span class="vpad">Copyright (c) 2025-2026 Augusto Goulart</span>
+</div>
+<p>
+  Generate QR Codes and print them on terminal.
+  Features: Model 2 byte/num/alpha modes, as specified in ISO/IEC 18004:2024. There are no dependencies, generator can be built from code on any platform.
+  Outputs inline (stdout), bitmap, or vectors (svg).
+  Read more about it <a href="https://github.com/oAGoulart/qrcode" target="_blank">here</a>.
+</p>
+<p>
+  <b>NOTE:</b> QR Code is a registered trademark of DENSO WAVE INCORPORATED in Japan and in other countries.
+</p>
 
 {% include sectionmark.html name="runarc" %}
 <div class="ascii">
@@ -59,26 +69,23 @@ title: uintptr_t
 {% include sectionmark.html name="libluacrc32" %}
 <div class="ascii">
             Lua 5.4 library to calculate 32-bits CRC
-                                      v. 1.0.0 Ms-RL
+                                      v. 1.1.1 Ms-RL
                   <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
 {% include progressbar.html pct=100 %}
 </div>
 <p>
-  Code includes four pre-generated lookup tables for six different methods. Read more about it <a href="https://github.com/oAGoulart/libluacrc32" target="_blank">here</a>.
+  Supports SSE 4.2; code includes four pre-generated lookup tables for six different methods. Read more about it <a href="https://github.com/oAGoulart/libluacrc32" target="_blank">here</a>.
 </p>
 
-{% include sectionmark.html name="qrcode" %}
+{% include sectionmark.html name="libluatsc" %}
 <div class="ascii">
-        Command-line QR Code generation and printing
-                                      v. 1.2.0 Ms-RL
-                  <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
+    Lua 5.4 library to read 64-bit time-stamp counter and TSC_AUX value
+                                                         v. 1.0.0 Ms-RL
+                                     <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
 {% include progressbar.html pct=100 %}
 </div>
 <p>
-  Generate QR Codes from Version 1 to 5 and print them on terminal. Objective is to use Model 2 (ISO/IEC 18004:2024), byte mode, with EC level L. Read more about it <a href="https://github.com/oAGoulart/qrcode" target="_blank">here</a>.
-</p>
-<p>
-  <b>NOTE:</b> QR Code is a registered trademark of DENSO WAVE INCORPORATED in Japan and in other countries.
+  Supports SSE 2. Read more about it <a href="https://github.com/oAGoulart/libluatsc" target="_blank">here</a>.
 </p>
 
 {% include sectionmark.html name="wrappem" %}
