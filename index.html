@@ -96,18 +96,11 @@ title: uintptr_t
     \  |  | | | |\  |-| |-' |-' |-  |\/|  |
      \ |  `.'.' ' ' ` ' '   '   `-' '  `  |
       \|__________________________________|    Ms-RL
-                                            v. 2.0.0
-                  <span class="vpad">Copyright (c) 2025 Augusto Goulart</span>
+                                            v. 1.1.0
+             <span class="vpad">Copyright (c) 2025-2026 Augusto Goulart</span>
 
-{% include progressbar.html pct=29 %}
+{% include progressbar.html pct=66 %}
 </div>
-<p>
-  <b>UPDATE [2025/06/10]:</b> I've found a refactored version of WrappEm in one of my backup drives. I'll take the reusable parts and use for a version 1.0, until this version is done.
-</p>
-<p>
-  This new version (2.0.0) is being re-written for easier adaptability into other formats in the future.
-  It will include additional command-line options to check/extract/patch PE files without relying on other tools.
-</p>
 <p>
   Wrappem is a command-line tool that can patch a PE file's import table to load an external (payload) library into the process' virtual memory.
   The import table is used by Windows to load required libraries before calling the PE file entry function (i.e. /ENTRY on MSBuild).
