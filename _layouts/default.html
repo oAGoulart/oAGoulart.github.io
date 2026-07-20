@@ -43,6 +43,24 @@
       border-bottom: 1px solid black;
       margin: 0;
     }
+    table {
+      border-block: 1px solid black;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    tr {
+      border-block: 1px solid black;
+    }
+    td, th {
+      padding: 0 1rem;
+    }
+    td:not(:last-child), th:not(:last-child) {
+      border-right: 1px solid black;
+    }
+    h1, h2, h3, h4, h5, h6 {
+      margin: 1rem;
+      font-style: italic;
+    }
   </style>
 </head>
 <body>
@@ -66,9 +84,7 @@
   <footer>
     <p>
       Built at {{ "now" | date: "%Y-%m-%d %H:%M:%S" }} UTC;
-      with Jekyll ({{ jekyll.version }}).
-    </p>
-    <p>
+      with Jekyll ({{ jekyll.version }}).<br>
       Copyright (c) {{ site.firstyear }}-{{ "now" | date: "%Y" }}
       {{ site.author }}. All rights reserved
     </p>
@@ -79,6 +95,7 @@
       strictly for commentary, criticism, and educational purposes under the
       doctrine of fair use. No copyright infringement is intended. Copyright
       notices should be sent to the electronic mail at the top of this page.
+      All content and software is provided "AS IS", without warranty.
     </p>
   </footer>
 </body>
