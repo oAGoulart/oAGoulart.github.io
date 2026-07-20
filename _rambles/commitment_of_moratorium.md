@@ -4,8 +4,6 @@ date: 2025/05/13 20:02:00 -3
 title: Commitment of moratorium on use, research, and development of anti-human technology
 ---
 
-_The original document can be found here:_ <a href="/files/commitment.pdf" target="_blank">commitment.pdf</a>
-
 We, as a society, are currently in a turning point in our history, from climate change to global fascism, we are faced with many threats, but one of the worst ailments that have haunted us has only risen up this century, however, it is the result of many years of apathy, a plague that was once a divine blessing; something that exploits the Human psyche to make them slaves of their own mind; something that breaks communities and makes individuals lonely; we call it technology, specifically, information technology. From social media exploiting children, shortening attention spans, and making in-person interactions less desiring; to artificial intelligence making kids illiterate, tearing critical thinking, and stealing intellectual and artistic property.
 
 As a developer, engineer or scientist, one must defer to some level of ethical thinking, and if so, inaction is not acceptable; not when it is so clear that we have caused this problem to begin with. Therefore, these are the limitations to be placed on our own creations, for the benefit of our communities, children and family:
@@ -22,3 +20,5 @@ I, hereby, commit myself to adhere to these tenets to the best of my ability. I 
 
 _This text has been written by Augusto Goulart on the thirteenth day of May, twenty twenty-five;_
 _he dedicates it to the public domain by waiving all of his rights to the work._
+
+_The original document can be found here:_ [commitment.pdf](/files/commitment.pdf)

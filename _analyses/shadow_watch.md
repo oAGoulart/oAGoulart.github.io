@@ -64,67 +64,27 @@ analysis:
       note: from the import table of s_EntryFile, not all loaded libraries
 ---
 
-### system::MinRequired()
+**Minimum requirements**
 
-<div class="ascii">
-    CPU: Pentium 133Mhz
- Memory: 32 MB RAM required
-  Video: DirectX compatible 2D video card with 2MB VRAM capable of 16bit colors
-     HD: ~700 MB uncompressed space
+CPU: Pentium 133Mhz<br>
+Memory: 32 MB RAM required<br>
+Video: DirectX compatible 2D video card with 2MB VRAM capable of 16bit colors<br>
+HD: ~700 MB uncompressed space<br>
 DirectX: 6.1
-</div>
 
-### fs::DirTree()
+---
+**Directory tree**
 
-<div class="ascii">
-              ╭─ NOTE ────────────────────────────╮
-              │  not all files/folders are shown  │
-              ╰───────────────────────────────────╯
-</div>
-<div class="ascii">
-root/
-├── <span class="vpad">Dx.dll</span>          <span class="comment">// loaded in rse.ge.ui.RSEUIMgr.loadUIFactory()</span>
-├── GameuxInstallHelper.dll
-├── readme.txt
-├── ShadowWatch.exe <span class="comment">// PE file, entry</span>
-│   ⋮
-├── sw.dat          <span class="comment">// PE file, its own JREW (1.1.8)</span>
-│   ⋮
-├── york.res        <span class="comment">// loaded in rse.ge.ui.VRootContainer.workLoop()</span>
-├── york.rsc        <span class="comment">// JAR file, contains the game and engine</span>
-├── art/
-├── cfg/
-├── jre/
-├── save/
-├── scores/
-├── sound/
-├── strings/
-└── video/
-</div>
+REMOVED for the moment
 
-### entry::CallStack()
+---
+**Call stack**
 
-<div class="ascii">
-  ShadowWatch.exe
-┌────────┬───────────────────────┐
-│ 402b80 ┆ entry()               │
-│ 401000 ┆ WinMain()             │ <span class="comment">// all params are unused</span>
-│ 401580 ┆ LaunchProgram("sw")   │
-│ 4015bd ┆ CreateProcessA()─ ─ ─ ┼ ─ ─ ─ ─ ─ ─ ─ ─ ─ ─┐
-│ 4015cf ┆ WaitForSingleObject() │                    ╷
-└────────┴───────────────────────┘     sw.dat         ▼
-                                    ┌────────┬────────────────────────┐
-                                    │ 402cd0 ┆ entry()                │
-                                    │ 401000 ┆ WinMain()              │
-                                    │ 4010c0 ┆ main()                 │
-              ┌─────────────────────┼ 401230 ┆ CallStaticVoidMethod() │
-              ▼         york.rsc    └────────┴────────────────────────┘
-      ┌──────────────────────────┐
-      │ rse.york.YorkMain.main() │
-      └──────────────────────────┘
-</div>
+REMOVED for the moment
 
-#### Remarks:
+---
+**Remarks**
+
 1. In `ShadowWatch.exe`, checks for valid CD-ROM volume "SHDWWTCH" (bypassed in this version), then renames "sw.dat" into "sw.exe", calls it and when "sw.exe" returns (after it is terminated) renames it back into "sw.dat".
 1. Game can be launched from the JRE (that's basically what `sw.dat` is), tested with my own built JRE (1.1.8_010), which allows for debugging with JDK-provided interface `javai_g.dll` (if linked with `javai_g.lib`).
 1. Both executables' malloc/calloc use GlobalAlloc for heap allocation, it also does small block heap (sbh) allocations (but using GlobalAlloc regardless). Very early (i.e. old) Visual C++ definitions.

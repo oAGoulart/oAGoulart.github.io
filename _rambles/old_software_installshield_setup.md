@@ -6,24 +6,12 @@ title: Old software InstallShield setup
 
 Some software from the early-2000s are shipped and packaged with 16-bit installers from InstallShield. Those 16-bit programs cannot be run on 64-bit Windows and the alternative &lt;[winevdm](https://github.com/otya128/winevdm)&gt; (a 16-bit Windows emulator) does not always work. In my case, using the following alternative worked:
 
-<table style="border: 1px solid;">
-  <tbody>
-    <tr>
-      <td style="width: 25ch">
-        <a href="{% link files/InstallShield3.7z %}" target="_blank">InstallShield3.7z</a> (<a href="{% link files/InstallShield3.7z.sig %}" target="_blank">SIG</a>)
-        <br>┕🢒 setup32.exe (<a href="{% link files/setup32.exe.sha256 %}" target="_blank">SHA</a>)
-      </td>
-      <td>
-        For InstallShield 3, this is the install engine that gets extracted from <code>_INST32I.EX_</code> by the 16-bit <code>setup.exe</code> (which is the launcher). Put this in the setup folder and run it instead of the <code>setup.exe</code>.<br>
-      </td>
-    </tr>
-    <tr>
-      <td colspan="2">
-        NOTE: The integrity of the executable file was <b>MANUALLY</b> verified, but is provided 'AS IS', without warranty of any kind, for archival purposes only. If you believe I missed something, please contact me as soon as possible.
-      </td>
-    </tr>
-  </tbody>
-</table>
+[InstallShield3.7z](files/InstallShield3.7z) with [SIG](files/InstallShield3.7z.sig);<br>
+check setup32.exe with [SHA](files/setup32.exe.sha256).
+
+For InstallShield 3, this is the install engine that gets extracted from <code>_INST32I.EX_</code> by the 16-bit <code>setup.exe</code> (which is the launcher). Put this in the setup folder and run it instead of the <code>setup.exe</code>.<br>
+
+NOTE: The integrity of the executable file was <b>MANUALLY</b> verified, but is provided 'AS IS', without warranty of any kind, for archival purposes only. If you believe I missed something, please contact me as soon as possible.
 
 ### proven use cases
 

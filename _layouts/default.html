@@ -2,18 +2,84 @@
 ---
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <title>{{ site.title }} | {{ page.title }}</title>
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
-    {% include styles.html %}
-  </head>
-  <body>
-    {% include header.html %}
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96"/>
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg"/>
+  <link rel="shortcut icon" href="/favicon.ico" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"/>
+  <meta name="apple-mobile-web-app-title" content="goulart.cc"/>
+  <link rel="manifest" href="/site.webmanifest"/>
+  <title>{{ site.title }} | {{ page.title }}</title>
+  <style>
+    html {
+      scrollbar-gutter: stable;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      font-family: monospace;
+      min-height: 100vh;
+      margin: 0;
+    }
+    body > * {
+      max-width: 800px;
+      width: 100%;
+      border: 1px solid black;
+      margin: 5px auto;
+    }
+    main {
+      flex: 1;
+      overflow-wrap: break-word;
+    }
+    p {
+      margin: 1rem;
+      text-align: justify;
+      padding: 0;
+    }
+    hr {
+      border: none;
+      border-bottom: 1px solid black;
+      margin: 0;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <p>
+      <b>AUGUSTO GOULART</b> -- humane design, by humans, for humans.<br>
+      personal contact: 3tr54eh7o (at) mozmail (dot) com<br>
+      business contact: augusto (at) goulart (dot) cc
+    </p>
+    <hr>
+    <p>
+      <a href="/">home</a> \\
+      <a href="/analyses">analyses</a> \\
+      <a href="/rambles">rambles</a> \\
+      <a href="/pub.key" target="_blank">pgp</a>
+    </p>
+  </header>
+  <main>
     {{ content }}
-    {% include footer.html %}
-  </body>
+  </main>
+  <footer>
+    <p>
+      Built at {{ "now" | date: "%Y-%m-%d %H:%M:%S" }} UTC;
+      with Jekyll ({{ jekyll.version }}).
+    </p>
+    <p>
+      Copyright (c) {{ site.firstyear }}-{{ "now" | date: "%Y" }}
+      {{ site.author }}. All rights reserved
+    </p>
+    <hr>
+    <p>
+      DISCLAIMER: Any and all intellectual property referenced, included, or
+      utilized in this site that is not owned by the author of the site is used
+      strictly for commentary, criticism, and educational purposes under the
+      doctrine of fair use. No copyright infringement is intended. Copyright
+      notices should be sent to the electronic mail at the top of this page.
+    </p>
+  </footer>
+</body>
 </html>

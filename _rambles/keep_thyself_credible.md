@@ -4,8 +4,6 @@ date: 2025/05/14 20:30:00 -3
 title: Keep thyself credible
 ---
 
-_Modified on the 12th of June, 2025._
-
 1. Thou shall not declare with no type.
 2. Thy function shall not return any type.
 3. Thy class shall public no attributes.

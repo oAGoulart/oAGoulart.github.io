@@ -2,9 +2,9 @@
 layout: default
 ---
 
-<h2 id="{{ page.title | slugify }}">{{ page.title }}</h2>
 <p>
+  <b id="{{ page.title | slugify }}">{{ page.title }}</b><br>
   publié en {{ page.date | date: "%Y-%m-%d %H:%M" }} -0300<br>
   {% if page.lastedit %}dernière révision en {{ page.lastedit | date: "%Y-%m-%d %H:%M" }}{% endif %}
-</p>
+</p><hr>
 {{ content }}
