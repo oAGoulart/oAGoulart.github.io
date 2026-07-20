@@ -17,7 +17,8 @@ title: Keep thyself credible
 
 _You shall set up these stones, which I command you today, on your lab._
 
-### Praxis
+---
+**Praxis**
 
 > For apart from inquiry, apart from the praxis, individuals cannot be truly human. Knowledge emerges only through invention and re-invention, through the restless, impatient, continuing, hopeful inquiry human beings pursue in the world, with the world, and with each other.
 
@@ -27,7 +28,8 @@ Thus, one _truly_ human beign does not lend his or hers inquiry, praxis, to a th
 
 Code, write, [AI-free content](https://github.com/oAGoulart/awesome-nollm).
 
-### Capital
+---
+**Capital**
 
 > Those of us who are well fed, well garmented and well ordered, ought not to forget that necessity makes frequently the root of crime. It is well for us to recollect that even in our own law-abiding, not to say virtuous cases, the only barrier between us and anarchy is the last nine meals we've had. It may be taken as axiomatic that a starving man is never a good citizen. With this in our mind, what shall be said of the man who arranges famine, who forces a labor strike with its privation, its rioting, its disorder, its bayonet thrusting, and its blood-letting as an incident in his money heaping? If necessity breeds crime, what is he who creates the necessity?
 
