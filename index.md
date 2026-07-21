@@ -3,6 +3,9 @@ layout: default
 title: home
 ---
 
+![Augusto Goulart](/media/logo-me.png)
+
+---
 ### Interests
 
 | AREA | KEYS 🔑 |
