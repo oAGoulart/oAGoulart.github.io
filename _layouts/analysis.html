@@ -4,7 +4,7 @@ layout: default
 
 {% assign title_base32 = page.analysis.name | crockford_encode %}
 <p>
-  <b id="game{{ title_base32 | downcase }}">{{ page.analysis.type }}::{{ title_base32 }}</b><br>
+  <b id="game{{ title_base32 | downcase }}">{{ title_base32 }}</b><br>
   t. {{ page.analysis.time }}
 </p>
 
