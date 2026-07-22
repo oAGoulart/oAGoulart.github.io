@@ -5,8 +5,11 @@ title: analyses
 
 {% for item in site.analyses -%}
   <p>
+    <b>{{ item.title }}</b><br>
+    TYPE: {{ item.analysis.type }}<br>
+    NAME:
     <a href="{{ item.url }}">
-      {{ item.analysis.type }}::{{ item.analysis.name | crockford_encode }}
+      {{ item.analysis.name | crockford_encode }}
     </a>
   </p>
 {%- if forloop.last != true %}<hr>{% endif %}

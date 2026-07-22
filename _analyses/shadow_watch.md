@@ -1,6 +1,6 @@
 ---
 layout: analysis
-title: "00400000h"
+title: Proprietary RSE Java engine
 description: >-
   "Shadow Watch is a turn-based, isometric game of stealth, intrigue and combat. You have been given command of a team of six highly trained operatives with orders to find out who is behind the attacks against those working on the ISS." - Red Storm Entertainment
 analysis:
